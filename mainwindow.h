@@ -9,6 +9,8 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QTableView>
+#include <QStandardItemModel>
+#include <QFont>
 
 class MainWindow : public QMainWindow
 {
@@ -18,35 +20,56 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 public slots:
-    void addClicked();
-    void queryClicked();
-    void calculateClicked();
-    void countClicked();
+    //void addClicked();
+    //void queryClicked();
+    //void calculateClicked();
+    //void countClicked();
 private:
     //Layout elements
     QWidget centralWidget;
     QVBoxLayout mainLayout;
-    QHBoxLayout inputLayout;
-    QHBoxLayout outputLayout;
+    QVBoxLayout inputLayout;
+    QHBoxLayout nameInputLayout;
+    QHBoxLayout emailInputLayout;
+    QHBoxLayout affiliationInputLayout;
+    QHBoxLayout typeOfRegistrationLayout;
+    QHBoxLayout registrationOrCategoryLayout;
+    //add button
+    QVBoxLayout outputLayout;
+    QHBoxLayout queryLayout;
+    QHBoxLayout calculateLayout;
+    QHBoxLayout countLayout;
     QTableView tableView;
+    QLabel registrationHeading;
+    QFont headerFont; //= registrationHeading.font();
+    QLabel outputHeading;
+    QLabel tableHeading;
     //Interactive fields
-    QPushButton add;
-       QLabel nameLabel;
-       QLineEdit name;
-       QLabel emailLabel;
-       QLineEdit email;
-       QLabel affiliationLabel;
-       QLineEdit affiliation;
-       QLabel registrationTypeLabel;
-       QComboBox registrationType; //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
-       QLineEdit qualificationOrCategory; //If(Registration/NotApplicable){/*HIDE*/}
-    QPushButton query;
-       QLineEdit queryInput; //Query by name, QString
-    QPushButton calculateFee;
-       QComboBox calculateFeeInput;    //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
-    QPushButton count;
-       QLineEdit countInput; //Input the affiliation, QString
+    QLabel nameLabel;
+    QLineEdit nameLineEdit;
+    QLabel emailLabel;
+    QLineEdit emailLineEdit;
+    QLabel affiliationLabel;
+    QLineEdit affiliationLineEdit;
+    QLabel registrationTypeLabel;
+    QLineEdit registrationTypeLineEdit; //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QLabel qualificationCategoryLabel; //Registration type / Category?
+    QLineEdit qualificationCategoryLineEdit; //Registration or category
+    QPushButton addRegistration;
 
+    QLabel isNameRegisteredLabel;
+    QLineEdit isNameRegisteredLineEdit; //Query by name, QString
+    QPushButton isRegisteredButton;
+
+    QLabel regestrationTypeQueryLabel;
+    QLineEdit registrationTypeQueryLineEdit;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QPushButton calculateButton;
+
+    QLabel countLabel;
+    QLineEdit affiliationCountLineEdit;; //Input the affiliation, QString
+    QPushButton countButton;
+
+    QStandardItemModel table;
 
 };
 #endif // MAINWINDOW_H
