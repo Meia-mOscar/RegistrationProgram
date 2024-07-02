@@ -1,0 +1,16 @@
+#ifndef REGISTRATIONLIST_H
+#define REGISTRATIONLIST_H
+#include "Registration.h"
+
+class RegistrationList {
+public:
+    bool addRegistration(Registration &registration);
+    ~RegistrationList();
+    bool isRegistered(QString name);
+    double totalFee(QString type);
+    int totalRegistrations(QString affiliation);
+public:
+    QList<Registration*> m_AttendeeList;
+};
+
+#endif // REGISTRATIONLIST_H
