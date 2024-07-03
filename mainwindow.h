@@ -41,10 +41,10 @@ private:
     QHBoxLayout countLayout;
     QTableView tableView;
     QLabel registrationHeading;
-    QFont headerFont; //= registrationHeading.font();
+    QFont headerFont;
     QLabel outputHeading;
     QLabel tableHeading;
-    //Interactive fields
+    //Registration fields
     QLabel nameLabel;
     QLineEdit nameLineEdit;
     QLabel emailLabel;
@@ -52,23 +52,21 @@ private:
     QLabel affiliationLabel;
     QLineEdit affiliationLineEdit;
     QLabel registrationTypeLabel;
-    QLineEdit registrationTypeLineEdit; //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QComboBox registrationTypeDropDown; //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
     QLabel qualificationCategoryLabel; //Registration type / Category?
     QLineEdit qualificationCategoryLineEdit; //Registration or category
     QPushButton addRegistration;
-
+    //Action groups
     QLabel isNameRegisteredLabel;
     QLineEdit isNameRegisteredLineEdit; //Query by name, QString
     QPushButton isRegisteredButton;
-
     QLabel regestrationTypeQueryLabel;
-    QLineEdit registrationTypeQueryLineEdit;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QComboBox actionGroupRegistrationTypeDropDown;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
     QPushButton calculateButton;
-
     QLabel countLabel;
     QLineEdit affiliationCountLineEdit;; //Input the affiliation, QString
     QPushButton countButton;
-
+    //Table fields
     QStandardItemModel table;
 
 };
