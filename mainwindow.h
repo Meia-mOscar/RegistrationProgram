@@ -20,11 +20,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 public slots:
-    //void addClicked();
-    //void queryClicked();
-    //void calculateClicked();
-    //void countClicked();
+    void addClicked();
+    void isRegisteredClicked();
+    void calculateClicked();
+    void countClicked();
 private:
+    void clearInputWidgets();
     //Layout elements
     QWidget centralWidget;
     QVBoxLayout mainLayout;
@@ -34,7 +35,6 @@ private:
     QHBoxLayout affiliationInputLayout;
     QHBoxLayout typeOfRegistrationLayout;
     QHBoxLayout registrationOrCategoryLayout;
-    //add button
     QVBoxLayout outputLayout;
     QHBoxLayout queryLayout;
     QHBoxLayout calculateLayout;

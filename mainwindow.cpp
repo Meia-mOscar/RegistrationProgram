@@ -66,13 +66,19 @@ MainWindow::MainWindow(QWidget *parent)
     countLayout.addWidget(&affiliationCountLineEdit);
     countButton.setText("Calculate Total Registrations");
     countLayout.addWidget(&countButton);
-
+    //Table layout
     tableHeading.setFont(headerFont);
     tableHeading.setText("Registration List Display");
     mainLayout.addWidget(&tableHeading);
 
     mainLayout.addWidget(&tableView);
     tableView.setModel(&table);
+
+    //Connect signals and slots
+    connect(addRegistration, &QPushButton::clicked, this, &MainWindow::addClicked);
+    connect(isRegisteredButton, &QPushButton::clicked, this, &MainWindow::isRegisteredClicked);
+    connect(countButton, &QPushButton::clicked, this, &MainWindow::countClicked);
+    connect(countButton, &QPushButton::clicked, this, &MainWindow::countClicked);
 }
 
 MainWindow::~MainWindow() {}
