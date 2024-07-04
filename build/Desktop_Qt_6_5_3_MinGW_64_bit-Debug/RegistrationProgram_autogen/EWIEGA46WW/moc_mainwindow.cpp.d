@@ -1,5 +1,7 @@
 C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QDate \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QString \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
@@ -17,6 +19,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationPr
   C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -29,6 +32,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationPr
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdebug.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qflags.h \
@@ -382,4 +386,9 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationPr
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Person.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h

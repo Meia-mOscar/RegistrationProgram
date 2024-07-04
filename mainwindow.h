@@ -1,6 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "RegistrationList.h"
+#include "Registration.h"
+#include "GuestRegistration.h"
+#include "StudentRegistration.h"
+
 #include <QMainWindow>
 #include <QLabel>
 #include <QPushButton>
@@ -25,7 +30,10 @@ public slots:
     void calculateClicked();
     void countClicked();
 private:
+    //GUI management
     void clearInputWidgets();
+    RegistrationList registrationList;
+    int rowCount;
     //Layout elements
     QWidget centralWidget;
     QVBoxLayout mainLayout;
@@ -34,7 +42,8 @@ private:
     QHBoxLayout emailInputLayout;
     QHBoxLayout affiliationInputLayout;
     QHBoxLayout typeOfRegistrationLayout;
-    QHBoxLayout registrationOrCategoryLayout;
+    QHBoxLayout qualificationOrCategoryLayout;
+    QHBoxLayout registrationStatusLayout;
     QVBoxLayout outputLayout;
     QHBoxLayout queryLayout;
     QHBoxLayout calculateLayout;
@@ -56,10 +65,12 @@ private:
     QLabel qualificationCategoryLabel; //Registration type / Category?
     QLineEdit qualificationCategoryLineEdit; //Registration or category
     QPushButton addRegistration;
+    QLabel registrationStatus;
     //Action groups
     QLabel isNameRegisteredLabel;
     QLineEdit isNameRegisteredLineEdit; //Query by name, QString
     QPushButton isRegisteredButton;
+    QLabel isNameRegisteredResult;
     QLabel regestrationTypeQueryLabel;
     QComboBox actionGroupRegistrationTypeDropDown;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
     QPushButton calculateButton;

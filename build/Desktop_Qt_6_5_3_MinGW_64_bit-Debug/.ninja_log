@@ -1,39 +1,77 @@
 # ninja log v5
-152	1615	7415635233139359	CMakeFiles/RegistrationProgram.dir/GuestRegistration.cpp.obj	ed26ca70219b85e2
+5	299	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
 147	1655	7415635233549732	CMakeFiles/RegistrationProgram.dir/StudentRegistration.cpp.obj	21ae8c68792505a5
-5	291	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-7	483	7416877374627049	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-7	483	7416877374627049	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-7	483	7416877374627049	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-7	483	7416877374627049	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+152	1615	7415635233139359	CMakeFiles/RegistrationProgram.dir/GuestRegistration.cpp.obj	ed26ca70219b85e2
+8	127	7418263266559088	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	127	7418263266559088	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+8	127	7418263266559088	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	127	7418263266559088	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
 138	1558	7414581017285014	CMakeFiles/RegistrationProgram.dir/Registration.cpp.obj	2620d2db92dbdfec
-494	2192	7416462308422788	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	b4c8f393e8c79f68
+701	2406	7418248505680886	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	b4c8f393e8c79f68
 150	1354	7415635230536998	CMakeFiles/RegistrationProgram.dir/Person.cpp.obj	6726b71f7eda054
-486	2446	7416877394755342	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
-488	2396	7416877394254889	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	6122bc669c5742a1
-483	2422	7416877394525133	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	29bbf99a091974d4
-2446	2696	7416877397147517	RegistrationProgram.exe	3488053ca1fb6fd6
-91	732	7414516983575289	build.ninja	8dc6d54c6c005e9
-5	254	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-4	297	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-7	112	7416877948722038	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-7	112	7416877948722038	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-7	112	7416877948722038	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-7	112	7416877948722038	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-125	1937	7416877966969717	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
-1937	2170	7416877969261707	RegistrationProgram.exe	3488053ca1fb6fd6
-4	269	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-5	294	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-8	115	7416878098151855	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-8	115	7416878098151855	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-8	115	7416878098151855	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-8	115	7416878098151855	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-129	2003	7416878117029016	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
-2004	2238	7416878119341115	RegistrationProgram.exe	3488053ca1fb6fd6
-4	291	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
-13	116	7416879076233142	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-13	116	7416879076233142	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-13	116	7416879076233142	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
-13	116	7416879076233142	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
-129	2017	7416879095230414	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
-2018	2252	7416879097552521	RegistrationProgram.exe	3488053ca1fb6fd6
+141	2033	7418263285619394	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+705	2946	7418248511075786	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	6122bc669c5742a1
+695	2948	7418248511095807	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	29bbf99a091974d4
+2033	2276	7418263288016019	RegistrationProgram.exe	3488053ca1fb6fd6
+322	1194	7418182406058526	build.ninja	8dc6d54c6c005e9
+6	401	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+8	150	7418270772406772	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	150	7418270772406772	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+8	150	7418270772406772	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	150	7418270772406772	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+173	1907	7418270789992747	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	b4c8f393e8c79f68
+170	2491	7418270795838058	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2492	2730	7418270798190197	RegistrationProgram.exe	3488053ca1fb6fd6
+4	300	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+5	404	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+9	137	7418273268682956	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	137	7418273268682956	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+9	137	7418273268682956	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	137	7418273268682956	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+154	2316	7418273290482761	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2316	2574	7418273293025075	RegistrationProgram.exe	3488053ca1fb6fd6
+5	399	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+16	148	7418273910498242	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+16	148	7418273910498242	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+16	148	7418273910498242	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+16	148	7418273910498242	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+165	2361	7418273932628352	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2361	2611	7418273935100599	RegistrationProgram.exe	3488053ca1fb6fd6
+4	299	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+6	501	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+8	575	7418280947700656	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	575	7418280947700656	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+8	575	7418280947700656	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+8	575	7418280947700656	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+580	2450	7418280966968169	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	6122bc669c5742a1
+578	2468	7418280967148332	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	29bbf99a091974d4
+575	2573	7418280968189279	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2573	2813	7418280970558870	RegistrationProgram.exe	3488053ca1fb6fd6
+5	394	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+16	149	7418282202006768	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+16	149	7418282202006768	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+16	149	7418282202006768	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+16	149	7418282202006768	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+165	2326	7418282223786575	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2326	2571	7418282226208763	RegistrationProgram.exe	3488053ca1fb6fd6
+4	310	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+5	433	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+9	665	7418283992513000	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	665	7418283992513000	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+9	665	7418283992513000	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	665	7418283992513000	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+672	2807	7418284014623098	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	6122bc669c5742a1
+665	2827	7418284014813264	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	29bbf99a091974d4
+669	2983	7418284016374684	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2983	3228	7418284018788653	RegistrationProgram.exe	3488053ca1fb6fd6
+5	300	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+7	538	0	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7f25a1c3838451d3
+9	647	7418298466670796	RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	647	7418298466670796	RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+9	647	7418298466670796	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/timestamp	5747f954a7adbd4d
+9	647	7418298466670796	C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	5747f954a7adbd4d
+652	2054	7418298481254049	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	b4c8f393e8c79f68
+654	2534	7418298486058405	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	6122bc669c5742a1
+647	2577	7418298486488795	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	29bbf99a091974d4
+649	2668	7418298487399623	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	5d2f159bc0187f88
+2668	2911	7418298489800037	RegistrationProgram.exe	3488053ca1fb6fd6

@@ -46,6 +46,7 @@ set(OLD_GLOB
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp"
