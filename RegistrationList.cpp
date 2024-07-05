@@ -1,18 +1,33 @@
 #include "RegistrationList.h"
 
 bool RegistrationList::addRegistration(Registration *registration){
-    bool added = true;
+    bool newAttendee = true;
+    //Email validation
     for(int i=0; i<m_AttendeeList.size(); i++){
-        if(m_AttendeeList.at(i)->getAttendee().getName() == registration->getAttendee().getName()){
-            added = false;
+        if(m_AttendeeList.at(i)->getAttendee().getEmail() == registration->getAttendee().getEmail()){
+            newAttendee = false;
         }
     }
 
-    if(added){
+    if(newAttendee){
         m_AttendeeList.append(registration);
     }
 
-    return added;
+    return newAttendee;
+
+    //Add registration should do Email validation, not Name validation
+    /*bool added = false;
+    for(int i=0; i<m_AttendeeList.size(); i++){
+        if(m_AttendeeList.at(i)->getAttendee().getName() == registration->getAttendee().getName()){
+            existing = false;
+        }
+    }
+
+    if(newAttendee){
+        m_AttendeeList.append(registration);
+    }
+
+    return added;*/
 }
 
 RegistrationList::RegistrationList(){
