@@ -13,17 +13,17 @@ bool RegistrationList::addRegistration(Registration *registration){
     }
 
     return added;
-};
+}
 
 RegistrationList::RegistrationList(){
 
-};
+}
 
 RegistrationList::~RegistrationList(){
     for(int i=0; i<m_AttendeeList.size(); i++){
         delete m_AttendeeList.at(i);
     }
-};
+}
 
 bool RegistrationList::isRegistered(QString name){
     bool isRegistered = false;
@@ -34,7 +34,7 @@ bool RegistrationList::isRegistered(QString name){
     }
 
     return isRegistered;
-};
+}
 
 //Accepted types are "Registration", "StudentRegistration", "GuestRegistration"
 double RegistrationList::totalFee(QString type){
@@ -46,7 +46,7 @@ double RegistrationList::totalFee(QString type){
     }
 
     return fee;
-};
+}
 
 int RegistrationList::totalRegistrations(QString affiliation){
     int count = 0;
@@ -60,9 +60,8 @@ int RegistrationList::totalRegistrations(QString affiliation){
         count = m_AttendeeList.size();
     }
 
-
     return count;
-};
+}
 
 Registration* RegistrationList::at(int i){
     return m_AttendeeList.at(i);

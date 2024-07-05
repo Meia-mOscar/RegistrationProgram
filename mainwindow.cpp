@@ -94,48 +94,58 @@ MainWindow::~MainWindow() {}
 
 void MainWindow::addClicked(){
     //Create appropriate user and add to registrationList
+    qDebug() << registrationList.totalRegistrations("allRegistrations");
+    //Oscar, is the add method adding to the Attendee list? Initially yes, but subsequent submissions?
+    bool isRegistered = false;
     for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
-        //registrationList.at(int)
+        //Unique user identification check, email
+        if(registrationList.at(i)->getAttendee().getEmail() == emailLineEdit.text()){
+            isRegistered = true;
+            registrationStatus.setText("Existing attendee");
+        }
     }
-    Person newPerson(nameLineEdit.text(), affiliationCountLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
-    if(registrationTypeDropDown.currentText() == "Registration"){
-        Registration *newRegistration = new Registration(newPerson);
-        registrationList.addRegistration(newRegistration);
-        registrationStatus.setText("Registered");
-    }else if(registrationTypeDropDown.currentText() == "Student Registration"){
-        StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
-        registrationList.addRegistration(newStudentRegistration);
-        registrationStatus.setText("Student registered");
-    }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
-        GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
-        registrationList.addRegistration(newGuestRegistration);
-        registrationStatus.setText("Guest registered");
-    }else{
-        registrationStatus.setText("Registration failed");
+    if(!isRegistered){
+        Person newPerson(nameLineEdit.text(), affiliationCountLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
+        if(registrationTypeDropDown.currentText() == "Registration"){
+            Registration *newRegistration = new Registration(newPerson);
+            registrationList.addRegistration(newRegistration);
+            registrationStatus.setText("Registered");
+        }else if(registrationTypeDropDown.currentText() == "Student Registration"){
+            StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
+            registrationList.addRegistration(newStudentRegistration);
+            registrationStatus.setText("Student registered");
+        }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
+            GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
+            registrationList.addRegistration(newGuestRegistration);
+            registrationStatus.setText("Guest registered");
+        }else{
+            registrationStatus.setText("Registration failed");
+        }
+
+        //Add each attribute to the attendee table
+        QStandardItem *nameAttribute = new QStandardItem;
+        nameAttribute->setText(nameLineEdit.text());
+        table.setItem(rowCount,0,nameAttribute);
+
+        QStandardItem *affiliationAttribute = new QStandardItem;
+        affiliationAttribute->setText(affiliationLineEdit.text());
+        table.setItem(rowCount,1,affiliationAttribute);
+
+        QStandardItem *emailAttribute = new QStandardItem;
+        emailAttribute->setText(emailLineEdit.text());
+        table.setItem(rowCount,2,emailAttribute);
+
+        QStandardItem *registrationTypeAttribute = new QStandardItem;
+        registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
+        table.setItem(rowCount,3,registrationTypeAttribute);
+
+        QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
+        qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
+        table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+
+        rowCount++;
     }
 
-    //Add each attribute to the attendee table
-    QStandardItem *nameAttribute = new QStandardItem;
-    nameAttribute->setText(nameLineEdit.text());
-    table.setItem(rowCount,0,nameAttribute);
-
-    QStandardItem *affiliationAttribute = new QStandardItem;
-    affiliationAttribute->setText(affiliationLineEdit.text());
-    table.setItem(rowCount,1,affiliationAttribute);
-
-    QStandardItem *emailAttribute = new QStandardItem;
-    emailAttribute->setText(emailLineEdit.text());
-    table.setItem(rowCount,2,emailAttribute);
-
-    QStandardItem *registrationTypeAttribute = new QStandardItem;
-    registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
-    table.setItem(rowCount,3,registrationTypeAttribute);
-
-    QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
-    qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
-    table.setItem(rowCount,4,qualificationOrCategoryAttribute);
-
-    rowCount++;
 }
 
 void MainWindow::isRegisteredClicked(){

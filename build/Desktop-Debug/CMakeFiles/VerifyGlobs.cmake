@@ -47,6 +47,8 @@ set(OLD_GLOB
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_mainwindow.cpp"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/main.cpp"
@@ -74,6 +76,7 @@ set(OLD_GLOB
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/mainwindow.h"
   )
