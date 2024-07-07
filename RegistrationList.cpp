@@ -14,20 +14,6 @@ bool RegistrationList::addRegistration(Registration *registration){
     }
 
     return newAttendee;
-
-    //Add registration should do Email validation, not Name validation
-    /*bool added = false;
-    for(int i=0; i<m_AttendeeList.size(); i++){
-        if(m_AttendeeList.at(i)->getAttendee().getName() == registration->getAttendee().getName()){
-            existing = false;
-        }
-    }
-
-    if(newAttendee){
-        m_AttendeeList.append(registration);
-    }
-
-    return added;*/
 }
 
 RegistrationList::RegistrationList(){

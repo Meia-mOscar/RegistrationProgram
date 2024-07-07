@@ -74,9 +74,11 @@ private:
     QLabel regestrationTypeQueryLabel;
     QComboBox actionGroupRegistrationTypeDropDown;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
     QPushButton calculateButton;
+    QLabel calculateResult;
     QLabel countLabel;
     QLineEdit affiliationCountLineEdit;; //Input the affiliation, QString
     QPushButton countButton;
+    QLabel countResult;
     //Table fields
     QStandardItemModel table;
 

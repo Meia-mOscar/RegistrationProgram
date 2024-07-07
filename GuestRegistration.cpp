@@ -23,3 +23,7 @@ QString GuestRegistration::toString(){
              QString(this->getBookingDate().toString()),
              m_Category);
 };
+
+QString GuestRegistration::getType(){
+    return QString("Guest Registration");
+}

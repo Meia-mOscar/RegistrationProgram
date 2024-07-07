@@ -64,10 +64,11 @@ MainWindow::MainWindow(QWidget *parent)
     outputLayout.addLayout(&calculateLayout);
     regestrationTypeQueryLabel.setText("Registration Type:");
     calculateLayout.addWidget(&regestrationTypeQueryLabel);
-    actionGroupRegistrationTypeDropDown.addItems((QStringList() << "All" << "Registration" << " StudentRegistration" << "GuestRegistration"));
+    actionGroupRegistrationTypeDropDown.addItems((QStringList() << "All" << "Registration" << "Student Registration" << "Guest Registration"));
     calculateLayout.addWidget(&actionGroupRegistrationTypeDropDown);
     calculateButton.setText("Calculate Total Fees");
     calculateLayout.addWidget(&calculateButton);
+    calculateLayout.addWidget(&calculateResult);
     //Count number of attendees by institution
     outputLayout.addLayout(&countLayout);
     countLabel.setText("Institution Name");
@@ -75,6 +76,7 @@ MainWindow::MainWindow(QWidget *parent)
     countLayout.addWidget(&affiliationCountLineEdit);
     countButton.setText("Calculate Total Registrations");
     countLayout.addWidget(&countButton);
+    countLayout.addWidget(&countResult);
 
     //Table layout
     tableHeading.setFont(headerFont);
@@ -94,8 +96,7 @@ MainWindow::~MainWindow() {}
 
 void MainWindow::addClicked(){
     //Create appropriate user and add to registrationList
-    qDebug() << registrationList.totalRegistrations("allRegistrations");
-    //Oscar, is the add method adding to the Attendee list? Initially yes, but subsequent submissions?
+    //qDebug() << registrationList.totalRegistrations("allRegistrations");
     bool isRegistered = false;
     for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
         //Unique user identification check, email
@@ -104,20 +105,26 @@ void MainWindow::addClicked(){
             registrationStatus.setText("Existing attendee");
         }
     }
+
     if(!isRegistered){
-        Person newPerson(nameLineEdit.text(), affiliationCountLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
+        QStandardItem *registrationFee = new QStandardItem;
+        Person newPerson(nameLineEdit.text(), affiliationLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
+        //qDebug() << newPerson.toString();
         if(registrationTypeDropDown.currentText() == "Registration"){
             Registration *newRegistration = new Registration(newPerson);
             registrationList.addRegistration(newRegistration);
             registrationStatus.setText("Registered");
+            registrationFee->setText(QString::number(newRegistration->calculateFee()));
         }else if(registrationTypeDropDown.currentText() == "Student Registration"){
             StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
             registrationList.addRegistration(newStudentRegistration);
             registrationStatus.setText("Student registered");
+            registrationFee->setText(QString::number(newStudentRegistration->calculateFee()));
         }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
             GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
             registrationList.addRegistration(newGuestRegistration);
             registrationStatus.setText("Guest registered");
+            registrationFee->setText(QString::number(newGuestRegistration->calculateFee()));
         }else{
             registrationStatus.setText("Registration failed");
         }
@@ -143,6 +150,8 @@ void MainWindow::addClicked(){
         qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
         table.setItem(rowCount,4,qualificationOrCategoryAttribute);
 
+        table.setItem(rowCount, 5, registrationFee);
+
         rowCount++;
     }
 
@@ -158,9 +167,39 @@ void MainWindow::isRegisteredClicked(){
 }
 
 void MainWindow::calculateClicked(){
-    // Implementation of the slot function
+    //“Registration”,“StudentRegistration”,“GuestRegistration” or “All”
+    //actionGroupRegistrationTypeDropDown.addItems((QStringList()
+    //<< "All" << "Registration" << "Student Registration" << "Guest Registration"));
+    /*for(int i=0; i<registrationList.totalRegistrations("allRegistrations");i++){
+        qDebug() << registrationList.at(i)->getType();
+    }*/
+    int sum=0;
+    if(actionGroupRegistrationTypeDropDown.currentText() == "All"){
+        for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+            sum += registrationList.at(i)->calculateFee();
+        }
+    }
+    else{
+        for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+            if(registrationList.at(i)->getType() == actionGroupRegistrationTypeDropDown.currentText()){
+                sum += registrationList.at(i)->calculateFee();
+            }
+        }
+    }
+
+    calculateResult.setText(QString::number(sum));
 }
 
 void MainWindow::countClicked(){
-    // Implementation of the slot function
+    //A RegistrationList can also return the number of attendees that
+    //are registered for the conference from an institution.
+    int count=0;
+    for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+        //compare with affiliation
+        //qDebug() << registrationList.at(i)->getAttendee().getAffiliation();
+        if(registrationList.at(i)->getAttendee().getAffiliation() == affiliationCountLineEdit.text()){
+            count++;
+        }
+    }
+    countResult.setText(QString::number(count));
 }
