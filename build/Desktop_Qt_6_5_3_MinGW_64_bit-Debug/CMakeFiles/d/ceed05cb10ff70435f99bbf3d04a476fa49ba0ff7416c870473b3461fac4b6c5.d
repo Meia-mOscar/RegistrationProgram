@@ -600,6 +600,8 @@ RegistrationProgram_autogen/timestamp: \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.cpp \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.cpp \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h \
   .qtc/package-manager/auto-setup.cmake \

@@ -407,3 +407,5 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/main.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.cpp
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.cpp

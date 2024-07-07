@@ -1,0 +1,7 @@
+#ifndef REGISTRATIONLISTWRITER_H
+#define REGISTRATIONLISTWRITER_H
+
+#include <QFile>
+#include <QtXml/QDomDocument>
+
+#endif // REGISTRATIONLISTWRITER_H
