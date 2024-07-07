@@ -1,6 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "RegistrationList.h"
+#include "Registration.h"
+#include "GuestRegistration.h"
+#include "StudentRegistration.h"
+
 #include <QMainWindow>
 #include <QLabel>
 #include <QPushButton>
@@ -20,11 +25,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 public slots:
-    //void addClicked();
-    //void queryClicked();
-    //void calculateClicked();
-    //void countClicked();
+    void addClicked();
+    void isRegisteredClicked();
+    void calculateClicked();
+    void countClicked();
 private:
+    //GUI management
+    void clearInputWidgets();
+    RegistrationList registrationList;
+    int rowCount;
     //Layout elements
     QWidget centralWidget;
     QVBoxLayout mainLayout;
@@ -33,8 +42,8 @@ private:
     QHBoxLayout emailInputLayout;
     QHBoxLayout affiliationInputLayout;
     QHBoxLayout typeOfRegistrationLayout;
-    QHBoxLayout registrationOrCategoryLayout;
-    //add button
+    QHBoxLayout qualificationOrCategoryLayout;
+    QHBoxLayout registrationStatusLayout;
     QVBoxLayout outputLayout;
     QHBoxLayout queryLayout;
     QHBoxLayout calculateLayout;
@@ -56,16 +65,20 @@ private:
     QLabel qualificationCategoryLabel; //Registration type / Category?
     QLineEdit qualificationCategoryLineEdit; //Registration or category
     QPushButton addRegistration;
+    QLabel registrationStatus;
     //Action groups
     QLabel isNameRegisteredLabel;
     QLineEdit isNameRegisteredLineEdit; //Query by name, QString
     QPushButton isRegisteredButton;
+    QLabel isNameRegisteredResult;
     QLabel regestrationTypeQueryLabel;
     QComboBox actionGroupRegistrationTypeDropDown;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
     QPushButton calculateButton;
+    QLabel calculateResult;
     QLabel countLabel;
     QLineEdit affiliationCountLineEdit;; //Input the affiliation, QString
     QPushButton countButton;
+    QLabel countResult;
     //Table fields
     QStandardItemModel table;
 

@@ -5,8 +5,8 @@ StudentRegistration::StudentRegistration(Person person,QString qualification)
 
 };
 
-double StudentRegistration::calculdateFee(){
-    return this->Registration::calculateFee()/2;
+double StudentRegistration::calculateFee(){
+    return this->Registration::calculateFee()*0.5;
 };
 
 QString StudentRegistration::toString(){
@@ -23,3 +23,7 @@ QString StudentRegistration::toString(){
              QString(this->getBookingDate().toString()),
              m_Qualification);
 };
+
+QString StudentRegistration::getType(){
+    return QString("Student Registration");
+}

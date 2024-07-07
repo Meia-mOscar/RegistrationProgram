@@ -8,8 +8,9 @@ public:
     Registration(Person person);
     Person getAttendee();
     QDate getBookingDate();
-    double calculateFee();
-    QString toString();
+    virtual double calculateFee();
+    virtual QString toString();
+    virtual QString getType();
 private:
     double STANDARD_FEE;
     Person m_Attendee;

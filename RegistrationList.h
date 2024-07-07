@@ -4,12 +4,14 @@
 
 class RegistrationList {
 public:
-    bool addRegistration(Registration &registration);
+    RegistrationList();
+    bool addRegistration(Registration *registration);
     ~RegistrationList();
     bool isRegistered(QString name);
     double totalFee(QString type);
     int totalRegistrations(QString affiliation);
-public:
+    Registration* at(int i);
+private:
     QList<Registration*> m_AttendeeList;
 };
 

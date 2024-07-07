@@ -1,0 +1,89 @@
+# ninja log v5
+10	336	7418595565598093	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+1185	4485	7418593486063421	CMakeFiles/RegistrationProgram.dir/Person.cpp.obj	fd12af5584dcf9e5
+5	1183	7418593452047158	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+5	1183	7418593452047158	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+5	1183	7418593452047158	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+5	1183	7418593452047158	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+1217	4996	7418593491298961	CMakeFiles/RegistrationProgram.dir/GuestRegistration.cpp.obj	ae017d44ad3db521
+1246	4978	7418593491092384	CMakeFiles/RegistrationProgram.dir/StudentRegistration.cpp.obj	66e2573b4dd98adf
+1234	5032	7418593491650389	CMakeFiles/RegistrationProgram.dir/Registration.cpp.obj	af8cc0511139e25
+1259	5313	7418593494496546	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+1278	5977	7418593501161290	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	f4b6f8e4c3d35e29
+1205	6041	7418593501748660	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	3fb0e644b63dc634
+1195	6076	7418593502113892	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	895c965f398546f4
+6077	7674	7418593507079596	RegistrationProgram.exe	20a106715707b7e3
+337	1970	7418595582729357	build.ninja	40c48b0ab3ab354e
+9	340	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+47	1150	7418595597301907	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+47	1150	7418595597301907	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+47	1150	7418595597301907	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+47	1150	7418595597301907	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+1151	3164	7418595618449375	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+1167	3893	7418595625791085	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	f4b6f8e4c3d35e29
+1159	3912	7418595625966395	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	3fb0e644b63dc634
+1175	4006	7418595626829615	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	895c965f398546f4
+4007	4490	7418595630978210	RegistrationProgram.exe	20a106715707b7e3
+7	287	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+8	293	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+11	297	7418600602322431	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+11	297	7418600602322431	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+11	297	7418600602322431	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+11	297	7418600602322431	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+320	3127	7418600630607283	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	895c965f398546f4
+3128	3610	7418600634908802	RegistrationProgram.exe	20a106715707b7e3
+8	289	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+10	511	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+15	1566	7418603102273626	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+15	1566	7418603102273626	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+15	1566	7418603102273626	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+15	1566	7418603102273626	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+1596	5132	7418603139528576	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+1611	5597	7418603144225706	CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj	f4b6f8e4c3d35e29
+1584	5615	7418603144460006	CMakeFiles/RegistrationProgram.dir/main.cpp.obj	3fb0e644b63dc634
+1568	5824	7418603146525723	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	895c965f398546f4
+5825	6425	7418603152029340	RegistrationProgram.exe	20a106715707b7e3
+8	455	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+19	384	7418603699101929	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+19	384	7418603699101929	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+19	384	7418603699101929	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+19	384	7418603699101929	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+412	2737	7418603722646192	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+2738	3226	7418603727318091	RegistrationProgram.exe	20a106715707b7e3
+16	356	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+18	353	7418603957468189	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+18	353	7418603957468189	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+18	353	7418603957468189	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+18	353	7418603957468189	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+379	2617	7418603980161189	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+2618	3103	7418603984743699	RegistrationProgram.exe	20a106715707b7e3
+44	405	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+39	373	7418612055950117	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+39	373	7418612055950117	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+39	373	7418612055950117	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+39	373	7418612055950117	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+396	2490	7418612077109378	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+2491	2991	7418612081654522	RegistrationProgram.exe	20a106715707b7e3
+7	380	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+13	294	7418614570155691	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+13	294	7418614570155691	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+13	294	7418614570155691	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+13	294	7418614570155691	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+317	3301	7418614600191744	CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj	895c965f398546f4
+3302	3853	7418614604380071	RegistrationProgram.exe	20a106715707b7e3
+29	474	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+88	460	7418738251433744	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+88	460	7418738251433744	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+88	460	7418738251433744	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+88	460	7418738251433744	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+483	2791	7418738274769111	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+2793	4100	7418738279820335	RegistrationProgram.exe	20a106715707b7e3
+7	328	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+13	317	7418738881486356	RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+13	317	7418738881486356	RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+13	317	7418738881486356	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/timestamp	49a25cf638b7b897
+13	317	7418738881486356	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp	49a25cf638b7b897
+342	2662	7418738904972823	CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj	46c01d575ee0aa93
+2663	3141	7418738909125291	RegistrationProgram.exe	20a106715707b7e3
+67	822	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1
+7	321	0	C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/cmake.verify_globs	96ef483d3a204ad1

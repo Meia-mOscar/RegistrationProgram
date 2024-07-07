@@ -1,9 +1,7 @@
 #include "Person.h"
 
-Person::Person(QString name, QString affiliation, QString email){
-    m_Name = name;
-    m_Affiliation = affiliation;
-    m_Email = email;
+Person::Person(QString name, QString affiliation, QString email) : m_Name(name), m_Affiliation(affiliation), m_Email(email){
+
 };
 
 QString Person::getName(){

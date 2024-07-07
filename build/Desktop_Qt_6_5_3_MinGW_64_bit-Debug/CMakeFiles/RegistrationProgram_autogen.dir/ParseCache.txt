@@ -3,6 +3,8 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QDate
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QString
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h
@@ -20,6 +22,7 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h
@@ -32,6 +35,7 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdebug.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qflags.h
@@ -386,6 +390,11 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h
