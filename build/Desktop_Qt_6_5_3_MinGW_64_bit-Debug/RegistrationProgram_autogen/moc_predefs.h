@@ -164,6 +164,7 @@
 #define __PTRDIFF_MAX__ 0x7fffffffffffffffLL
 #define __amd64 1
 #define __tune_core2__ 1
+#define QT_XML_LIB 1
 #define __ATOMIC_HLE_ACQUIRE 65536
 #define __GNUG__ 11
 #define __LONG_LONG_MAX__ 0x7fffffffffffffffLL

@@ -2598,6 +2598,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_dom",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: dom (from target Qt6::Xml)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_doubleconversion",
 			"properties" : 
 			[
@@ -6064,6 +6076,18 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Widgets"
+		},
+		{
+			"name" : "Qt6Xml_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Xml."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml"
 		},
 		{
 			"name" : "Qt6ZlibPrivate_DIR",
