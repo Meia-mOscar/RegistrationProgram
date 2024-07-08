@@ -1,7 +1,8 @@
 #include "Registration.h"
 
 Registration::Registration(Person person) : m_Attendee(person.getName(), person.getAffiliation(), person.getEmail()){
-    STANDARD_FEE=10;
+    STANDARD_FEE = 10;
+    m_BookingDate = QDate::currentDate();
 }
 
 Person Registration::getAttendee(){

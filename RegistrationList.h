@@ -10,6 +10,7 @@ public:
     bool isRegistered(QString name);
     double totalFee(QString type);
     int totalRegistrations(QString affiliation);
+    int totalRegistrations();
     Registration* at(int i);
 private:
     QList<Registration*> m_AttendeeList;

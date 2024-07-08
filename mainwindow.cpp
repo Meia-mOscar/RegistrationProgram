@@ -103,9 +103,9 @@ MainWindow::~MainWindow() {
 
 void MainWindow::addClicked(){
     //Create appropriate user and add to registrationList
-    //qDebug() << registrationList.totalRegistrations("allRegistrations");
+    //qDebug() << registrationList.totalRegistrations();
     bool isRegistered = false;
-    for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+    for(int i=0; i<registrationList.totalRegistrations(); i++){
         //Unique user identification check, email
         if(registrationList.at(i)->getAttendee().getEmail() == emailLineEdit.text()){
             isRegistered = true;
@@ -177,17 +177,17 @@ void MainWindow::calculateClicked(){
     //“Registration”,“StudentRegistration”,“GuestRegistration” or “All”
     //actionGroupRegistrationTypeDropDown.addItems((QStringList()
     //<< "All" << "Registration" << "Student Registration" << "Guest Registration"));
-    /*for(int i=0; i<registrationList.totalRegistrations("allRegistrations");i++){
+    /*for(int i=0; i<registrationList.totalRegistrations();i++){
         qDebug() << registrationList.at(i)->getType();
     }*/
     int sum=0;
     if(actionGroupRegistrationTypeDropDown.currentText() == "All"){
-        for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+        for(int i=0; i<registrationList.totalRegistrations(); i++){
             sum += registrationList.at(i)->calculateFee();
         }
     }
     else{
-        for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+        for(int i=0; i<registrationList.totalRegistrations(); i++){
             if(registrationList.at(i)->getType() == actionGroupRegistrationTypeDropDown.currentText()){
                 sum += registrationList.at(i)->calculateFee();
             }
@@ -201,7 +201,7 @@ void MainWindow::countClicked(){
     //A RegistrationList can also return the number of attendees that
     //are registered for the conference from an institution.
     int count=0;
-    for(int i=0; i<registrationList.totalRegistrations("allRegistrations"); i++){
+    for(int i=0; i<registrationList.totalRegistrations(); i++){
         //compare with affiliation
         //qDebug() << registrationList.at(i)->getAttendee().getAffiliation();
         if(registrationList.at(i)->getAttendee().getAffiliation() == affiliationCountLineEdit.text()){

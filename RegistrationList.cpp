@@ -51,17 +51,17 @@ double RegistrationList::totalFee(QString type){
 
 int RegistrationList::totalRegistrations(QString affiliation){
     int count = 0;
-    if(affiliation != "allRegistrations"){
-        for(int i=0; i<m_AttendeeList.size(); i++){
+    for(int i=0; i<m_AttendeeList.size(); i++){
             if(m_AttendeeList.at(i)->getAttendee().getAffiliation() == affiliation){
                 count++;
             }
         }
-    }else{
-        count = m_AttendeeList.size();
-    }
 
     return count;
+}
+
+int RegistrationList::totalRegistrations(){
+    return m_AttendeeList.size();
 }
 
 Registration* RegistrationList::at(int i){
