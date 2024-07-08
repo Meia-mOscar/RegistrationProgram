@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+    : QMainWindow(parent), registrationListWriter(new RegistrationListWriter)
 {
     //Configure default values
     rowCount = 0;
@@ -85,14 +85,21 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout.addWidget(&tableView);
     tableView.setModel(&table);
 
+    //Question 2, Save as XML
+    saveButton.setText("Save as XML");
+    mainLayout.addWidget(&saveButton);
+
     //Connect signals and slots
     connect(&addRegistration, &QPushButton::clicked, this, &MainWindow::addClicked);
     connect(&isRegisteredButton, &QPushButton::clicked, this, &MainWindow::isRegisteredClicked);
     connect(&calculateButton, &QPushButton::clicked, this, &MainWindow::calculateClicked);
     connect(&countButton, &QPushButton::clicked, this, &MainWindow::countClicked);
+    connect(&saveButton, &QPushButton::clicked, this, &MainWindow::saveClicked);
 }
 
-MainWindow::~MainWindow() {}
+MainWindow::~MainWindow() {
+    delete registrationListWriter;
+}
 
 void MainWindow::addClicked(){
     //Create appropriate user and add to registrationList
@@ -202,4 +209,14 @@ void MainWindow::countClicked(){
         }
     }
     countResult.setText(QString::number(count));
+}
+
+void MainWindow::saveClicked(){
+    //QFileDialog
+    QString fileName;
+    fileName.clear();
+    fileName = QFileDialog::getOpenFileName(this,tr("Open image"),"",tr("Text *.txt or XML *.xml"));
+    qDebug() << fileName;
+    //Write to file
+    registrationListWriter->writeToFile(registrationList, fileName);
 }

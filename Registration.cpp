@@ -2,19 +2,19 @@
 
 Registration::Registration(Person person) : m_Attendee(person.getName(), person.getAffiliation(), person.getEmail()){
     STANDARD_FEE=10;
-};
+}
 
 Person Registration::getAttendee(){
     return m_Attendee;
-};
+}
 
 QDate Registration::getBookingDate(){
     return m_BookingDate;
-};
+}
 
 double Registration::calculateFee(){
     return STANDARD_FEE;
-};
+}
 
 QString Registration::toString(){
     return QString("Name: %1\n"
@@ -27,7 +27,7 @@ QString Registration::toString(){
              m_Attendee.getEmail(),
              QString(m_BookingDate.toString()),
              QString::number(STANDARD_FEE));
-};
+}
 
 QString Registration::getType(){
     return QString("Registration");

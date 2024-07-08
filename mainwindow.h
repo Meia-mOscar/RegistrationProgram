@@ -2,9 +2,9 @@
 #define MAINWINDOW_H
 
 #include "RegistrationList.h"
-#include "Registration.h"
 #include "GuestRegistration.h"
 #include "StudentRegistration.h"
+#include "RegistrationListWriter.h"
 
 #include <QMainWindow>
 #include <QLabel>
@@ -16,6 +16,7 @@
 #include <QTableView>
 #include <QStandardItemModel>
 #include <QFont>
+#include <QFileDialog>
 
 class MainWindow : public QMainWindow
 {
@@ -29,6 +30,7 @@ public slots:
     void isRegisteredClicked();
     void calculateClicked();
     void countClicked();
+    void saveClicked();
 private:
     //GUI management
     void clearInputWidgets();
@@ -81,6 +83,10 @@ private:
     QLabel countResult;
     //Table fields
     QStandardItemModel table;
+    //Question 2, Save as XML
+    QPushButton saveButton;
+    RegistrationListWriter *registrationListWriter;
+    QFileDialog fileDialog;
 
 };
 #endif // MAINWINDOW_H
