@@ -444,12 +444,14 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.h
-C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListReader.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.cpp
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListReader.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/main.cpp

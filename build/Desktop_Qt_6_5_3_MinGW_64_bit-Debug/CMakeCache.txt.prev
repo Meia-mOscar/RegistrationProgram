@@ -334,6 +334,9 @@ Qt6WidgetsTools_DIR:PATH=C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6WidgetsTools
 //The directory containing a CMake configuration file for Qt6Widgets.
 Qt6Widgets_DIR:PATH=C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Widgets
 
+//The directory containing a CMake configuration file for Qt6Xml.
+Qt6Xml_DIR:PATH=C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml
+
 //The directory containing a CMake configuration file for Qt6ZlibPrivate.
 Qt6ZlibPrivate_DIR:PATH=C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6ZlibPrivate
 
@@ -709,6 +712,8 @@ QT_FEATURE_dladdr:INTERNAL=OFF
 QT_FEATURE_dlopen:INTERNAL=OFF
 //Qt feature: dockwidget (from target Qt6::Widgets)
 QT_FEATURE_dockwidget:INTERNAL=ON
+//Qt feature: dom (from target Qt6::Xml)
+QT_FEATURE_dom:INTERNAL=ON
 //Qt feature: doubleconversion (from target Qt6::Core)
 QT_FEATURE_doubleconversion:INTERNAL=ON
 //Qt feature: draganddrop (from target Qt6::Gui)

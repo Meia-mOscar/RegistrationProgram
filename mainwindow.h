@@ -31,6 +31,7 @@ public slots:
     void calculateClicked();
     void countClicked();
     void saveClicked();
+    void uploadClicked();
 private:
     //GUI management
     void clearInputWidgets();
@@ -86,7 +87,9 @@ private:
     //Question 2, Save as XML
     QPushButton saveButton;
     RegistrationListWriter *registrationListWriter;
-    QFileDialog fileDialog;
-
+    QFileDialog fileDialogWrite;
+    //Question3, Upload XML
+    QPushButton uploadButton;
+    QFileDialog fileDialogUpload;
 };
 #endif // MAINWINDOW_H

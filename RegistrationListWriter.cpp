@@ -9,7 +9,7 @@ bool RegistrationListWriter::writeToFile(RegistrationList &regList, QString &fil
     QDomElement root = doc.createElement("RegistrationList");
     doc.appendChild(root);
 
-    for(int i=0; i<regList.totalRegistrations("allRegistrations"); i++){
+    for(int i=0; i<regList.totalRegistrations(); i++){
         QDomElement regElement = doc.createElement("registration");
         regElement.setAttribute("type", regList.at(i)->getType());
 

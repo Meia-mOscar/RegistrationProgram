@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-6bba099da366054e474b.json",
+					"jsonFile" : "directory-.-Debug-c5b465da8e7e869e3c0e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RegistrationProgram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RegistrationProgram-Debug-94eb74d35c910bbe6dfe.json",
+					"jsonFile" : "target-RegistrationProgram-Debug-1c49956aaa04982cc1ce.json",
 					"name" : "RegistrationProgram",
 					"projectIndex" : 0
 				},
@@ -58,7 +58,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RegistrationProgram_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RegistrationProgram_autogen_timestamp_deps-Debug-5d10bf2a768762eb6973.json",
+					"jsonFile" : "target-RegistrationProgram_autogen_timestamp_deps-Debug-434129bfd577488737aa.json",
 					"name" : "RegistrationProgram_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
@@ -74,6 +74,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

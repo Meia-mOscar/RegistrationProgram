@@ -89,12 +89,17 @@ MainWindow::MainWindow(QWidget *parent)
     saveButton.setText("Save as XML");
     mainLayout.addWidget(&saveButton);
 
+    //Question 3, Upload XML
+    uploadButton.setText("Upload file");
+    mainLayout.addWidget(&uploadButton);
+
     //Connect signals and slots
     connect(&addRegistration, &QPushButton::clicked, this, &MainWindow::addClicked);
     connect(&isRegisteredButton, &QPushButton::clicked, this, &MainWindow::isRegisteredClicked);
     connect(&calculateButton, &QPushButton::clicked, this, &MainWindow::calculateClicked);
     connect(&countButton, &QPushButton::clicked, this, &MainWindow::countClicked);
     connect(&saveButton, &QPushButton::clicked, this, &MainWindow::saveClicked);
+    connect(&uploadButton, &QPushButton::clicked, this, &MainWindow::uploadClicked);
 }
 
 MainWindow::~MainWindow() {
@@ -216,7 +221,16 @@ void MainWindow::saveClicked(){
     QString fileName;
     fileName.clear();
     fileName = QFileDialog::getOpenFileName(this,tr("Open image"),"",tr("Text *.txt or XML *.xml"));
-    qDebug() << fileName;
+    //qDebug() << fileName;
     //Write to file
     registrationListWriter->writeToFile(registrationList, fileName);
+}
+
+void MainWindow::uploadClicked(){
+    QString fileName;
+    fileName.clear();
+    fileName = QFileDialog::getOpenFileName(this,tr("Open file"),"",tr(".xml"));
+    if(!fileName.isEmpty()){
+        //Pass info to RegistrationListReader::readFromFile(RegistrationList *regList, QString str)
+    }
 }
