@@ -3,8 +3,11 @@
 
 #include "RegistrationList.h"
 #include <QMessageBox>
-#include <QDomDocument>
 #include <QXmlInputSource>
+#include <QXmlSimpleReader>
+#include <QXmlDefaultHandler>
+
+#include <QDomDocument> //Get rid of this
 
 class RegistrationListReader{
 public:
