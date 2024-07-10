@@ -7,15 +7,20 @@
 #include <QXmlSimpleReader>
 #include <QXmlDefaultHandler>
 
-#include <QDomDocument> //Get rid of this
 
-class RegistrationListReader{
+class RegistrationListReader : public QXmlDefaultHandler{
 public:
     RegistrationListReader();
-    void readFromFile(RegistrationList *regList, QString str);
+    bool startDocument();
+    bool startElement(const QString &namespaceURI,
+                      const QString &localName,
+                      const QString &qName,
+                      const QXmlAttributes &atts);
+    bool characters(const QString &text);
+    bool endElement(const QString &namespaceURI, const QString &localName, const QString &qName);
+    void readFromFile(RegistrationList *regList, QString fName);
 private:
-    QMessageBox criticalError;
-    QDomDocument doc;
+    QString tbc;
 };
 
 #endif // REGISTRATIONLISTREADER_H
