@@ -25,5 +25,5 @@ QString StudentRegistration::toString(){
 };
 
 QString StudentRegistration::getType(){
-    return QString("Student Registration");
+    return QString("studentregistration");
 }

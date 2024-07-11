@@ -8,6 +8,7 @@ public:
     Registration(Person person);
     Person getAttendee();
     QDate getBookingDate();
+    void setBookingDate(int yyyy, int mm, int dd);
     virtual double calculateFee();
     virtual QString toString();
     virtual QString getType();

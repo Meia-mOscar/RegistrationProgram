@@ -6,6 +6,9 @@
 #include <QXmlInputSource>
 #include <QXmlSimpleReader>
 #include <QXmlDefaultHandler>
+#include <QStringList>
+#include <QList>
+#include <QDate>
 
 
 class RegistrationListReader : public QXmlDefaultHandler{
@@ -18,9 +21,21 @@ public:
                       const QXmlAttributes &atts);
     bool characters(const QString &text);
     bool endElement(const QString &namespaceURI, const QString &localName, const QString &qName);
+    bool fatalError(const QXmlParseException &exception);
     void readFromFile(RegistrationList *regList, QString fName);
+    void addRegistration(RegistrationList *regList);
 private:
-    QString tbc;
+    QString currentTxt;
+    QString currentTag;
+    QStringList rName;
+    QStringList rAffiliation;
+    QStringList rEmail;
+    QStringList rType;
+    QStringList rCategoryOrQualification;
+    QList<double> rFee;
+    QList<QDate> rDate;
+    int rCount;
+    bool ok;
 };
 
 #endif // REGISTRATIONLISTREADER_H

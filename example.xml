@@ -1,0 +1,29 @@
+<RegistrationList>
+ <registration type="Registration">
+  <attendee>
+   <name>Oskar</name>
+   <affiliation>unisa</affiliation>
+   <email>vanDerWesthuixen</email>
+  </attendee>
+  <bookingdate>Thu Jul 11 2024</bookingdate>
+  <registrationfee>10</registrationfee>
+ </registration>
+ <registration type="Student Registration">
+  <attendee>
+   <name>Emma</name>
+   <affiliation>maties</affiliation>
+   <email>Klara</email>
+  </attendee>
+  <bookingdate>Thu Jul 11 2024</bookingdate>
+  <registrationfee>5</registrationfee>
+ </registration>
+ <registration type="Guest Registration">
+  <attendee>
+   <name>Jet</name>
+   <affiliation>marketsman</affiliation>
+   <email>Steady</email>
+  </attendee>
+  <bookingdate>Thu Jul 11 2024</bookingdate>
+  <registrationfee>9</registrationfee>
+ </registration>
+</RegistrationList>

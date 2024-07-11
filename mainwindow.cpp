@@ -84,6 +84,8 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout.addWidget(&tableHeading);
     mainLayout.addWidget(&tableView);
     tableView.setModel(&table);
+    //Table column headings
+    //QFont::bold() at (rowCount == 0)
 
     //Question 2, Save as XML
     saveButton.setText("Save as XML");
@@ -162,7 +164,11 @@ void MainWindow::addClicked(){
         qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
         table.setItem(rowCount,4,qualificationOrCategoryAttribute);
 
-        table.setItem(rowCount, 5, registrationFee);
+        QStandardItem *bookingDate = new QStandardItem;
+        bookingDate->setText(QDate::currentDate().toString("dd/MM/YYYY"));
+        table.setItem(rowCount,5,bookingDate);
+
+        table.setItem(rowCount, 6, registrationFee);
 
         rowCount++;
     }
@@ -193,7 +199,7 @@ void MainWindow::calculateClicked(){
     }
     else{
         for(int i=0; i<registrationList.totalRegistrations(); i++){
-            if(registrationList.at(i)->getType() == actionGroupRegistrationTypeDropDown.currentText()){
+            if(registrationList.at(i)->getType() == actionGroupRegistrationTypeDropDown.currentText().toLower().remove(" ")){
                 sum += registrationList.at(i)->calculateFee();
             }
         }
@@ -233,4 +239,65 @@ void MainWindow::uploadClicked(){
     if(!fileName.isEmpty()){
         //Pass info to RegistrationListReader::readFromFile(RegistrationList *regList, QString str)
     }
+
+    //Uniqueness test
+    /*bool isRegistered = false;
+    for(int i=0; i<registrationList.totalRegistrations(); i++){
+        //Unique user identification check, email
+        if(registrationList.at(i)->getAttendee().getEmail() == emailLineEdit.text()){
+            isRegistered = true;
+            registrationStatus.setText("Existing attendee");
+        }
+    }*/
+
+    //Create registration and add to list
+    /*if(!isRegistered){
+        QStandardItem *registrationFee = new QStandardItem;
+        Person newPerson(nameLineEdit.text(), affiliationLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
+        //qDebug() << newPerson.toString();
+        if(registrationTypeDropDown.currentText() == "Registration"){
+            Registration *newRegistration = new Registration(newPerson);
+            registrationList.addRegistration(newRegistration);
+            registrationStatus.setText("Registered");
+            registrationFee->setText(QString::number(newRegistration->calculateFee()));
+        }else if(registrationTypeDropDown.currentText() == "Student Registration"){
+            StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
+            registrationList.addRegistration(newStudentRegistration);
+            registrationStatus.setText("Student registered");
+            registrationFee->setText(QString::number(newStudentRegistration->calculateFee()));
+        }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
+            GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
+            registrationList.addRegistration(newGuestRegistration);
+            registrationStatus.setText("Guest registered");
+            registrationFee->setText(QString::number(newGuestRegistration->calculateFee()));
+        }else{
+            registrationStatus.setText("Registration failed");
+        }*/
+
+        //Add each attribute to the attendee table
+        //for each registration added
+        /*QStandardItem *nameAttribute = new QStandardItem;
+        nameAttribute->setText(nameLineEdit.text());
+        table.setItem(rowCount,0,nameAttribute);
+
+        QStandardItem *affiliationAttribute = new QStandardItem;
+        affiliationAttribute->setText(affiliationLineEdit.text());
+        table.setItem(rowCount,1,affiliationAttribute);
+
+        QStandardItem *emailAttribute = new QStandardItem;
+        emailAttribute->setText(emailLineEdit.text());
+        table.setItem(rowCount,2,emailAttribute);
+
+        QStandardItem *registrationTypeAttribute = new QStandardItem;
+        registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
+        table.setItem(rowCount,3,registrationTypeAttribute);
+
+        QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
+        qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
+        table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+
+        table.setItem(rowCount, 5, registrationFee);
+
+        rowCount++;
+    }*/
 }
