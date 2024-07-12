@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), registrationListWriter(new RegistrationListWriter)
+    : QMainWindow(parent), registrationListWriter(new RegistrationListWriter), handler(new RegistrationListReader)
 {
     //Configure default values
     rowCount = 0;
@@ -226,7 +226,7 @@ void MainWindow::saveClicked(){
     //QFileDialog
     QString fileName;
     fileName.clear();
-    fileName = QFileDialog::getOpenFileName(this,tr("Open image"),"",tr("Text *.txt or XML *.xml"));
+    fileName = QFileDialog::getOpenFileName(this,tr("Open file"),"",tr("*.xml"));
     //qDebug() << fileName;
     //Write to file
     registrationListWriter->writeToFile(registrationList, fileName);
@@ -235,9 +235,13 @@ void MainWindow::saveClicked(){
 void MainWindow::uploadClicked(){
     QString fileName;
     fileName.clear();
-    fileName = QFileDialog::getOpenFileName(this,tr("Open file"),"",tr(".xml"));
+    fileName = QFileDialog::getOpenFileName(this,tr("Open file"),"",tr("*.xml"));
     if(!fileName.isEmpty()){
-        //Pass info to RegistrationListReader::readFromFile(RegistrationList *regList, QString str)
+        QFile xmlFile(fileName);
+        QXmlInputSource source(&xmlFile);
+        QXmlSimpleReader reader;
+        reader.setContentHandler(handler);
+        reader.parse(source); //ASSERT failure in QList::operator[]: "index out of range"
     }
 
     /*Create an instance of RegistrationListReader in MainWindow constructor.

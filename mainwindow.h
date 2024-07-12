@@ -93,5 +93,6 @@ private:
     //Question3, Upload XML
     QPushButton uploadButton;
     QFileDialog fileDialogUpload;
+    RegistrationListReader *handler;
 };
 #endif // MAINWINDOW_H

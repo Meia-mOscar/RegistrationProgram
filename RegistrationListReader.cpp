@@ -2,6 +2,12 @@
 #include "StudentRegistration.h"
 #include "GuestRegistration.h"
 
+//Debugging toolset
+/*int startDocCount = 0;
+int startCount = 0;
+int charCount = 0;
+int endCount = 0;*/
+
 RegistrationListReader::RegistrationListReader(){
     currentTxt.clear();
     currentTag.clear();
@@ -17,6 +23,8 @@ RegistrationListReader::RegistrationListReader(){
 }
 
 bool RegistrationListReader::startDocument(){
+    //startDocCount++;
+    //qDebug() << "startDoc: " << startDocCount;
     return true;
 }
 
@@ -24,37 +32,45 @@ bool RegistrationListReader::startElement(const QString &namespaceURI,
                   const QString &localName,
                   const QString &qName,
                   const QXmlAttributes &atts){
+    //startCount++;
+    //qDebug() << "startElement: " << startCount;
     currentTxt.clear();
     if(qName == "registration"){
         //Current Start Element is "registration"
-        rType[rCount] = atts.value("type"); //Is registrationListWriter passing the type value?
+        qDebug() << "Enter: if(qName == 'registration'): " << qName;
+        rType.append(atts.value("type")); //Is registrationListWriter passing the type value?
+        //qDebug() << "Appended type";
     }else if(qName == "name" || qName == "affiliation" || qName == "email" || qName == "bookingdate" || qName == "registrationfee"){
         currentTag = qName;
+        qDebug() << "Enter: else if(qName ==): " << qName;
     }
     return true;
 }
 
 bool RegistrationListReader::endElement(const QString &namespaceURI, const QString &localName, const QString &qName){
-
+    //endCount++;
+    qDebug() << "endElement: " << qName;
     if(qName == "registration"){
         //Current End Element is "registration" then increment Lists to next item
         rCount++;
     }else if(qName == "name"){
-        rName[rCount] = currentTxt;
+        rName.append(currentTxt);
     }else if(qName == "affiliation"){
-        rAffiliation[rCount] = currentTxt;
+        rAffiliation.append(currentTxt);
     }else if(qName == "email"){
-        rEmail[rCount] = currentTxt;
+        rEmail.append(currentTxt);
     }else if(qName == "bookingdate"){
-        rDate[rCount].fromString(currentTxt,"dd/MM/YYYY");
+        rDate << QDate::fromString(currentTxt,"dd/MM/YYYY");
     }else if(qName == "registrationfee"){
-        rFee[rCount] = currentTxt.toDouble(&ok);
+        rFee << currentTxt.toDouble(&ok);
     }
     currentTag.clear();
     return true;
 }
 
 bool RegistrationListReader::characters(const QString &text){
+    //charCount++;
+    qDebug() << "Current char: " << text;
     currentTxt += text;
     return true;
 }
@@ -65,9 +81,7 @@ bool RegistrationListReader::fatalError(const QXmlParseException &exception){
 }
 
 void RegistrationListReader::readFromFile(RegistrationList *regList, QString fName){
-    QFile xmlFile(fName);
-    QXmlInputSource source(&xmlFile);
-    //custom handler
+
 }
 
 void RegistrationListReader::addRegistration(RegistrationList *regList){
