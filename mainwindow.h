@@ -5,6 +5,7 @@
 #include "GuestRegistration.h"
 #include "StudentRegistration.h"
 #include "RegistrationListWriter.h"
+#include "RegistrationListReader.h"
 
 #include <QMainWindow>
 #include <QLabel>
@@ -32,6 +33,7 @@ public slots:
     void countClicked();
     void saveClicked();
     void uploadClicked();
+    void refreshTable();
 private:
     //GUI management
     void clearInputWidgets();

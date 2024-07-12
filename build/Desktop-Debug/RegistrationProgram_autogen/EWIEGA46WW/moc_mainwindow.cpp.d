@@ -2,7 +2,9 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/moc_predefs.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QDate \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QFile \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QList \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QString \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QStringList \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QTextStream \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -124,6 +126,12 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Qt/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/QXmlDefaultHandler \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/QXmlInputSource \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/QXmlSimpleReader \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/qcore5global.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/qtcore5compat-config.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore5Compat/qxml.h \
   C:/Qt/6.5.3/mingw_64/include/QtGui/QFont \
   C:/Qt/6.5.3/mingw_64/include/QtGui/QStandardItemModel \
   C:/Qt/6.5.3/mingw_64/include/QtGui/qaction.h \
@@ -165,6 +173,7 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QTableView \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout \
@@ -185,6 +194,7 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -441,5 +451,6 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListReader.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h

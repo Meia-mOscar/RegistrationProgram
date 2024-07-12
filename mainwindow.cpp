@@ -240,64 +240,49 @@ void MainWindow::uploadClicked(){
         //Pass info to RegistrationListReader::readFromFile(RegistrationList *regList, QString str)
     }
 
-    //Uniqueness test
-    /*bool isRegistered = false;
-    for(int i=0; i<registrationList.totalRegistrations(); i++){
-        //Unique user identification check, email
-        if(registrationList.at(i)->getAttendee().getEmail() == emailLineEdit.text()){
-            isRegistered = true;
-            registrationStatus.setText("Existing attendee");
-        }
-    }*/
+    /*Create an instance of RegistrationListReader in MainWindow constructor.
+     * registrationListReader->addRegistration(registrationList); //Adds *new registrations from import file
+     * //Add newAttendees to table...
+     * QStandardItemModel::clear() to remove all items from the table,
+     * and implement a new MainWindow::refreshTable() to delete,
+     * and add all items from the RegistrationList, by looping through it.
+     *
+    */
 
-    //Create registration and add to list
-    /*if(!isRegistered){
-        QStandardItem *registrationFee = new QStandardItem;
-        Person newPerson(nameLineEdit.text(), affiliationLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
-        //qDebug() << newPerson.toString();
-        if(registrationTypeDropDown.currentText() == "Registration"){
-            Registration *newRegistration = new Registration(newPerson);
-            registrationList.addRegistration(newRegistration);
-            registrationStatus.setText("Registered");
-            registrationFee->setText(QString::number(newRegistration->calculateFee()));
-        }else if(registrationTypeDropDown.currentText() == "Student Registration"){
-            StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
-            registrationList.addRegistration(newStudentRegistration);
-            registrationStatus.setText("Student registered");
-            registrationFee->setText(QString::number(newStudentRegistration->calculateFee()));
-        }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
-            GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
-            registrationList.addRegistration(newGuestRegistration);
-            registrationStatus.setText("Guest registered");
-            registrationFee->setText(QString::number(newGuestRegistration->calculateFee()));
-        }else{
-            registrationStatus.setText("Registration failed");
-        }*/
 
-        //Add each attribute to the attendee table
-        //for each registration added
-        /*QStandardItem *nameAttribute = new QStandardItem;
-        nameAttribute->setText(nameLineEdit.text());
-        table.setItem(rowCount,0,nameAttribute);
+}
 
-        QStandardItem *affiliationAttribute = new QStandardItem;
-        affiliationAttribute->setText(affiliationLineEdit.text());
-        table.setItem(rowCount,1,affiliationAttribute);
 
-        QStandardItem *emailAttribute = new QStandardItem;
-        emailAttribute->setText(emailLineEdit.text());
-        table.setItem(rowCount,2,emailAttribute);
+void MainWindow::refreshTable(){
+    /*use the follwoing logic for MainWindow::refreshTable()
+    QStandardItem *nameAttribute = new QStandardItem;
+    nameAttribute->setText(nameLineEdit.text());
+    table.setItem(rowCount,0,nameAttribute);
 
-        QStandardItem *registrationTypeAttribute = new QStandardItem;
-        registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
-        table.setItem(rowCount,3,registrationTypeAttribute);
+    QStandardItem *affiliationAttribute = new QStandardItem;
+    affiliationAttribute->setText(affiliationLineEdit.text());
+    table.setItem(rowCount,1,affiliationAttribute);
 
-        QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
-        qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
-        table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+    QStandardItem *emailAttribute = new QStandardItem;
+    emailAttribute->setText(emailLineEdit.text());
+    table.setItem(rowCount,2,emailAttribute);
 
-        table.setItem(rowCount, 5, registrationFee);
+    QStandardItem *registrationTypeAttribute = new QStandardItem;
+    registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
+    table.setItem(rowCount,3,registrationTypeAttribute);
 
-        rowCount++;
-    }*/
+    QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
+    qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
+    table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+
+    table.setItem(rowCount, 5, registrationFee);
+
+    rowCount++;*/
+
+    /*Once done here, add it's implementation to the following:
+     * MainWIndow::addClicked()
+     * MainWindow::uploadClicked()
+     *
+    */
+    return;
 }
