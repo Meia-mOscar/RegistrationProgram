@@ -24,6 +24,7 @@ public:
     bool fatalError(const QXmlParseException &exception);
     void readFromFile(RegistrationList *regList, QString fName);
     void addRegistration(RegistrationList *regList);
+    int returnRegistrationCount();
 private:
     QString currentTxt;
     QString currentTag;
@@ -35,6 +36,7 @@ private:
     QList<double> rFee;
     QList<QDate> rDate;
     int rCount;
+    int newRegistrationCount;
     bool ok;
 };
 

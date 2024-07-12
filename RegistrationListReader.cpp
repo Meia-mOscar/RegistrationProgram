@@ -11,7 +11,8 @@ RegistrationListReader::RegistrationListReader(){
     rType.clear();
     rCategoryOrQualification.clear();
     rFee.clear();
-    rCount = 0;
+    rCount=0;
+    newRegistrationCount=0;
     ok = true;
 }
 
@@ -73,27 +74,40 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
     int yyyy;
     int mm;
     int dd;
-
-    //Oscar, perform email validation!
-
+    bool isRegistered = false;
+    //Uniqueness check, email
     for(int i=0; i<rCount; i++){
-        yyyy = rDate[rCount].year();
-        mm = rDate[rCount].month();
-        dd = rDate[rCount].day();
-        Person newPerson(rName[rCount], rAffiliation[rCount], rEmail[rCount]);
-        if(rType[rCount] == "registration"){
-            Registration *newRegistration = new Registration(newPerson);
-            //int yyyy, int mm, int dd
-            newRegistration->setBookingDate(yyyy, mm, dd);
-            regList->addRegistration(newRegistration);
-        }else if(rType[rCount] == "studentregistration"){
-            StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, "");
-            newStudentRegistration->setBookingDate(yyyy, mm, dd);
-            regList->addRegistration(newStudentRegistration);
-        }else if(rType[rCount] == "guestregistration"){
-            GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, "");
-            newGuestRegistration->setBookingDate(yyyy, mm, dd);
-            regList->addRegistration(newGuestRegistration);
+        for(int n=0; n<rCount; n++){
+            if(rEmail[i] == regList->at(n)->getAttendee().getEmail()){
+                isRegistered = true;
+            }
+        }
+        if(!isRegistered){
+            newRegistrationCount++;
+            yyyy = rDate[i].year();
+            mm = rDate[i].month();
+            dd = rDate[i].day();
+            Person newPerson(rName[i], rAffiliation[i], rEmail[i]);
+            if(rType[i] == "registration"){
+                Registration *newRegistration = new Registration(newPerson);
+                //int yyyy, int mm, int dd
+                newRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newRegistration);
+            }else if(rType[i] == "studentregistration"){
+                StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, "");
+                newStudentRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newStudentRegistration);
+            }else if(rType[i] == "guestregistration"){
+                GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, "");
+                newGuestRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newGuestRegistration);
+            }
         }
     }
+
+        return;
+}
+
+int RegistrationListReader::returnRegistrationCount(){
+    return newRegistrationCount;
 }
