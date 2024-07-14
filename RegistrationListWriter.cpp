@@ -33,7 +33,7 @@ bool RegistrationListWriter::writeToFile(RegistrationList &regList, QString &fil
         regElement.appendChild(attendeeElement);
 
         QDomElement bookingDateElement = doc.createElement("bookingdate");
-        QDomText bookingDateText = doc.createTextNode(regList.at(i)->getBookingDate().toString());
+        QDomText bookingDateText = doc.createTextNode(regList.at(i)->getBookingDate().toString("dd/MM/yyyy"));
         bookingDateElement.appendChild(bookingDateText);
         regElement.appendChild(bookingDateElement);
 

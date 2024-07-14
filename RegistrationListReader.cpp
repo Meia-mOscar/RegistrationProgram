@@ -2,12 +2,6 @@
 #include "StudentRegistration.h"
 #include "GuestRegistration.h"
 
-//Debugging toolset
-/*int startDocCount = 0;
-int startCount = 0;
-int charCount = 0;
-int endCount = 0;*/
-
 RegistrationListReader::RegistrationListReader(){
     currentTxt.clear();
     currentTag.clear();
@@ -23,8 +17,6 @@ RegistrationListReader::RegistrationListReader(){
 }
 
 bool RegistrationListReader::startDocument(){
-    //startDocCount++;
-    //qDebug() << "startDoc: " << startDocCount;
     return true;
 }
 
@@ -32,24 +24,16 @@ bool RegistrationListReader::startElement(const QString &namespaceURI,
                   const QString &localName,
                   const QString &qName,
                   const QXmlAttributes &atts){
-    //startCount++;
-    //qDebug() << "startElement: " << startCount;
     currentTxt.clear();
     if(qName == "registration"){
-        //Current Start Element is "registration"
-        qDebug() << "Enter: if(qName == 'registration'): " << qName;
-        rType.append(atts.value("type")); //Is registrationListWriter passing the type value?
-        //qDebug() << "Appended type";
+        rType.append(atts.value("type"));
     }else if(qName == "name" || qName == "affiliation" || qName == "email" || qName == "bookingdate" || qName == "registrationfee"){
         currentTag = qName;
-        qDebug() << "Enter: else if(qName ==): " << qName;
     }
     return true;
 }
 
 bool RegistrationListReader::endElement(const QString &namespaceURI, const QString &localName, const QString &qName){
-    //endCount++;
-    qDebug() << "endElement: " << qName;
     if(qName == "registration"){
         //Current End Element is "registration" then increment Lists to next item
         rCount++;
@@ -60,7 +44,7 @@ bool RegistrationListReader::endElement(const QString &namespaceURI, const QStri
     }else if(qName == "email"){
         rEmail.append(currentTxt);
     }else if(qName == "bookingdate"){
-        rDate << QDate::fromString(currentTxt,"dd/MM/YYYY");
+        rDate << QDate::fromString(currentTxt,"dd/MM/yyyy");
     }else if(qName == "registrationfee"){
         rFee << currentTxt.toDouble(&ok);
     }
@@ -69,14 +53,11 @@ bool RegistrationListReader::endElement(const QString &namespaceURI, const QStri
 }
 
 bool RegistrationListReader::characters(const QString &text){
-    //charCount++;
-    qDebug() << "Current char: " << text;
     currentTxt += text;
     return true;
 }
 
 bool RegistrationListReader::fatalError(const QXmlParseException &exception){
-    qDebug() << "Parse error at line" << exception.lineNumber() <<", column" << exception.columnNumber() << ":" << exception.message();
     return false;
 }
 
@@ -88,30 +69,31 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
     int yyyy;
     int mm;
     int dd;
-    bool isRegistered = false;
     //Uniqueness check, email
+    int regListSize = regList->totalRegistrations();
     for(int i=0; i<rCount; i++){
-        for(int n=0; n<rCount; n++){
-            if(rEmail[i] == regList->at(n)->getAttendee().getEmail()){
+        bool isRegistered = false;
+        for(int n=0; n<regListSize; n++){
+            if(rEmail.at(i) == regList->at(n)->getAttendee().getEmail()){
                 isRegistered = true;
             }
         }
         if(!isRegistered){
             newRegistrationCount++;
-            yyyy = rDate[i].year();
-            mm = rDate[i].month();
-            dd = rDate[i].day();
-            Person newPerson(rName[i], rAffiliation[i], rEmail[i]);
-            if(rType[i] == "registration"){
+            yyyy = rDate.at(i).year();
+            mm = rDate.at(i).month();
+            dd = rDate.at(i).day();
+            Person newPerson(rName.at(i), rAffiliation.at(i), rEmail.at(i));
+            if(rType.at(i) == "registration"){
                 Registration *newRegistration = new Registration(newPerson);
                 //int yyyy, int mm, int dd
                 newRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newRegistration);
-            }else if(rType[i] == "studentregistration"){
+            }else if(rType.at(i) == "studentregistration"){
                 StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, "");
                 newStudentRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newStudentRegistration);
-            }else if(rType[i] == "guestregistration"){
+            }else if(rType.at(i) == "guestregistration"){
                 GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, "");
                 newGuestRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newGuestRegistration);
@@ -119,7 +101,7 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
         }
     }
 
-        return;
+    return;
 }
 
 int RegistrationListReader::returnRegistrationCount(){

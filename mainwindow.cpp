@@ -4,7 +4,6 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), registrationListWriter(new RegistrationListWriter), handler(new RegistrationListReader)
 {
     //Configure default values
-    rowCount = 0;
 
     //Configure mainwindow
     headerFont.setBold(true);
@@ -109,8 +108,6 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::addClicked(){
-    //Create appropriate user and add to registrationList
-    //qDebug() << registrationList.totalRegistrations();
     bool isRegistered = false;
     for(int i=0; i<registrationList.totalRegistrations(); i++){
         //Unique user identification check, email
@@ -121,62 +118,29 @@ void MainWindow::addClicked(){
     }
 
     if(!isRegistered){
-        QStandardItem *registrationFee = new QStandardItem;
-        Person newPerson(nameLineEdit.text(), affiliationLineEdit.text(), emailLineEdit.text()); //nameLineEdit, affiliationCountLineEdit, emailLineEdit
-        //qDebug() << newPerson.toString();
+        Person newPerson(nameLineEdit.text(), affiliationLineEdit.text(), emailLineEdit.text());
         if(registrationTypeDropDown.currentText() == "Registration"){
             Registration *newRegistration = new Registration(newPerson);
             registrationList.addRegistration(newRegistration);
             registrationStatus.setText("Registered");
-            registrationFee->setText(QString::number(newRegistration->calculateFee()));
         }else if(registrationTypeDropDown.currentText() == "Student Registration"){
             StudentRegistration *newStudentRegistration = new StudentRegistration(newPerson, qualificationCategoryLineEdit.text());
             registrationList.addRegistration(newStudentRegistration);
             registrationStatus.setText("Student registered");
-            registrationFee->setText(QString::number(newStudentRegistration->calculateFee()));
         }else if(registrationTypeDropDown.currentText() == "Guest Registration"){
             GuestRegistration *newGuestRegistration = new GuestRegistration(newPerson, qualificationCategoryLineEdit.text());
             registrationList.addRegistration(newGuestRegistration);
             registrationStatus.setText("Guest registered");
-            registrationFee->setText(QString::number(newGuestRegistration->calculateFee()));
-        }else{
-            registrationStatus.setText("Registration failed");
         }
-
-        //Add each attribute to the attendee table
-        QStandardItem *nameAttribute = new QStandardItem;
-        nameAttribute->setText(nameLineEdit.text());
-        table.setItem(rowCount,0,nameAttribute);
-
-        QStandardItem *affiliationAttribute = new QStandardItem;
-        affiliationAttribute->setText(affiliationLineEdit.text());
-        table.setItem(rowCount,1,affiliationAttribute);
-
-        QStandardItem *emailAttribute = new QStandardItem;
-        emailAttribute->setText(emailLineEdit.text());
-        table.setItem(rowCount,2,emailAttribute);
-
-        QStandardItem *registrationTypeAttribute = new QStandardItem;
-        registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
-        table.setItem(rowCount,3,registrationTypeAttribute);
-
-        QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
-        qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
-        table.setItem(rowCount,4,qualificationOrCategoryAttribute);
-
-        QStandardItem *bookingDate = new QStandardItem;
-        bookingDate->setText(QDate::currentDate().toString("dd/MM/YYYY"));
-        table.setItem(rowCount,5,bookingDate);
-
-        table.setItem(rowCount, 6, registrationFee);
-
-        rowCount++;
+        else{
+            registrationStatus.setText("Registration failed");
+            return;
+        }
+        MainWindow::updateTable();
     }
-
 }
 
 void MainWindow::isRegisteredClicked(){
-    // Implementation of the slot function
     if(registrationList.isRegistered(isNameRegisteredLineEdit.text())){
         isNameRegisteredResult.setText("Yes");
     }else{
@@ -185,12 +149,6 @@ void MainWindow::isRegisteredClicked(){
 }
 
 void MainWindow::calculateClicked(){
-    //“Registration”,“StudentRegistration”,“GuestRegistration” or “All”
-    //actionGroupRegistrationTypeDropDown.addItems((QStringList()
-    //<< "All" << "Registration" << "Student Registration" << "Guest Registration"));
-    /*for(int i=0; i<registrationList.totalRegistrations();i++){
-        qDebug() << registrationList.at(i)->getType();
-    }*/
     int sum=0;
     if(actionGroupRegistrationTypeDropDown.currentText() == "All"){
         for(int i=0; i<registrationList.totalRegistrations(); i++){
@@ -209,12 +167,8 @@ void MainWindow::calculateClicked(){
 }
 
 void MainWindow::countClicked(){
-    //A RegistrationList can also return the number of attendees that
-    //are registered for the conference from an institution.
     int count=0;
     for(int i=0; i<registrationList.totalRegistrations(); i++){
-        //compare with affiliation
-        //qDebug() << registrationList.at(i)->getAttendee().getAffiliation();
         if(registrationList.at(i)->getAttendee().getAffiliation() == affiliationCountLineEdit.text()){
             count++;
         }
@@ -223,12 +177,9 @@ void MainWindow::countClicked(){
 }
 
 void MainWindow::saveClicked(){
-    //QFileDialog
     QString fileName;
     fileName.clear();
     fileName = QFileDialog::getOpenFileName(this,tr("Open file"),"",tr("*.xml"));
-    //qDebug() << fileName;
-    //Write to file
     registrationListWriter->writeToFile(registrationList, fileName);
 }
 
@@ -241,52 +192,120 @@ void MainWindow::uploadClicked(){
         QXmlInputSource source(&xmlFile);
         QXmlSimpleReader reader;
         reader.setContentHandler(handler);
-        reader.parse(source); //ASSERT failure in QList::operator[]: "index out of range"
+        reader.parse(source);
     }
-
-    /*Create an instance of RegistrationListReader in MainWindow constructor.
-     * registrationListReader->addRegistration(registrationList); //Adds *new registrations from import file
-     * //Add newAttendees to table...
-     * QStandardItemModel::clear() to remove all items from the table,
-     * and implement a new MainWindow::refreshTable() to delete,
-     * and add all items from the RegistrationList, by looping through it.
-     *
-    */
-
-
+    handler->addRegistration(&registrationList);
+    MainWindow::refreshTable();
 }
 
-
 void MainWindow::refreshTable(){
-    /*use the follwoing logic for MainWindow::refreshTable()
+    table.clear();
+    rowCount = 0;
+    for (int var = 0; var < registrationList.totalRegistrations(); ++var) {
+        QStandardItem *nameAttribute = new QStandardItem;
+        nameAttribute->setText(registrationList.at(var)->getAttendee().getName());
+        table.setItem(rowCount,0,nameAttribute);
+
+        QStandardItem *affiliationAttribute = new QStandardItem;
+        affiliationAttribute->setText(registrationList.at(var)->getAttendee().getAffiliation());
+        table.setItem(rowCount,1,affiliationAttribute);
+
+        QStandardItem *emailAttribute = new QStandardItem;
+        emailAttribute->setText(registrationList.at(var)->getAttendee().getEmail());
+        table.setItem(rowCount,2,emailAttribute);
+
+        QStandardItem *registrationTypeAttribute = new QStandardItem;
+        registrationTypeAttribute->setText(registrationList.at(var)->getType());
+        table.setItem(rowCount,3,registrationTypeAttribute);
+
+        int start=0;
+        int end=0;
+        QString qVar = "qualification: ";
+        QString cVar = "category: ";
+        QString substr;
+        QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
+        if(registrationList.at(rowCount)->toString().contains("category", Qt::CaseInsensitive)){
+            start = registrationList.at(rowCount)->toString().indexOf(cVar,0,Qt::CaseInsensitive);
+            start += cVar.length()-1;
+            substr = registrationList.at(rowCount)->toString().mid(start);
+            qualificationOrCategoryAttribute->setText(substr);
+
+        }else if(registrationList.at(rowCount)->toString().contains("qualification", Qt::CaseInsensitive)){
+            start = registrationList.at(rowCount)->toString().indexOf(qVar,0,Qt::CaseInsensitive);
+            start += qVar.length()-1;
+            substr = registrationList.at(rowCount)->toString().mid(start);
+            qualificationOrCategoryAttribute->setText(substr);
+        }else{
+            qualificationOrCategoryAttribute->setText("");
+        }
+        table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+
+        QStandardItem *bookingDate = new QStandardItem;
+        bookingDate->setText(registrationList.at(var)->getBookingDate().toString());
+        table.setItem(rowCount,5,bookingDate);
+
+        QStandardItem *registrationFee = new QStandardItem;
+        registrationFee->setText(QString::number(registrationList.at(var)->calculateFee()));
+        table.setItem(rowCount, 6, registrationFee);
+
+        rowCount++;
+    }
+
+    return;
+}
+
+void MainWindow::updateTable(){
+    int index;
+    index = (registrationList.totalRegistrations()-1);
+    //Add each attribute to the attendee table
     QStandardItem *nameAttribute = new QStandardItem;
-    nameAttribute->setText(nameLineEdit.text());
-    table.setItem(rowCount,0,nameAttribute);
+    nameAttribute->setText(registrationList.at(index)->getAttendee().getName());
+    table.setItem(index,0,nameAttribute);
 
     QStandardItem *affiliationAttribute = new QStandardItem;
-    affiliationAttribute->setText(affiliationLineEdit.text());
-    table.setItem(rowCount,1,affiliationAttribute);
+    affiliationAttribute->setText(registrationList.at(index)->getAttendee().getAffiliation());
+    table.setItem(index,1,affiliationAttribute);
 
     QStandardItem *emailAttribute = new QStandardItem;
-    emailAttribute->setText(emailLineEdit.text());
-    table.setItem(rowCount,2,emailAttribute);
+    emailAttribute->setText(registrationList.at(index)->getAttendee().getEmail());
+    table.setItem(index,2,emailAttribute);
 
     QStandardItem *registrationTypeAttribute = new QStandardItem;
-    registrationTypeAttribute->setText(registrationTypeDropDown.currentText());
-    table.setItem(rowCount,3,registrationTypeAttribute);
+    registrationTypeAttribute->setText(registrationList.at(index)->getType());
+    table.setItem(index,3,registrationTypeAttribute);
 
     QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
     qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
-    table.setItem(rowCount,4,qualificationOrCategoryAttribute);
+    table.setItem(index,4,qualificationOrCategoryAttribute);
 
-    table.setItem(rowCount, 5, registrationFee);
+    /*int start=0;
+    int end=0;
+    QString qVar = "qualification: ";
+    QString cVar = "category: ";
+    QString substr;
+    QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
+    if(registrationList.at(index)->toString().contains("category", Qt::CaseInsensitive)){
+        start = registrationList.at(index)->toString().indexOf(cVar,0,Qt::CaseInsensitive);
+        start += cVar.length()-1;
+        substr = registrationList.at(index)->toString().mid(start);
+        qualificationOrCategoryAttribute->setText(substr);
 
-    rowCount++;*/
+    }else if(registrationList.at(index)->toString().contains("qualification", Qt::CaseInsensitive)){
+        start = registrationList.at(index)->toString().indexOf(qVar,0,Qt::CaseInsensitive);
+        start += qVar.length()-1;
+        substr = registrationList.at(index)->toString().mid(start);
+        qualificationOrCategoryAttribute->setText(substr);
+    }else{
+        qualificationOrCategoryAttribute->setText("");
+    }
+    table.setItem(index,4,qualificationOrCategoryAttribute);*/
 
-    /*Once done here, add it's implementation to the following:
-     * MainWIndow::addClicked()
-     * MainWindow::uploadClicked()
-     *
-    */
-    return;
+    QStandardItem *bookingDate = new QStandardItem;
+    bookingDate->setText(registrationList.at(index)->getBookingDate().toString("dd/M/yyyy"));
+    table.setItem(index,5,bookingDate);
+
+    //registrationType
+    QStandardItem *registrationFee = new QStandardItem;
+    registrationFee->setText(QString::number(registrationList.at(index)->calculateFee()));
+    table.setItem(index, 6, registrationFee);
 }

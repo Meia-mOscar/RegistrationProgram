@@ -33,8 +33,9 @@ public slots:
     void countClicked();
     void saveClicked();
     void uploadClicked();
-    void refreshTable();
 private:
+    void updateTable();
+    void refreshTable();
     //GUI management
     void clearInputWidgets();
     RegistrationList registrationList;
