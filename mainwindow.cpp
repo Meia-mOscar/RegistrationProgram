@@ -1,4 +1,6 @@
 #include "mainwindow.h"
+#include "GuestRegistration.h"
+#include "StudentRegistration.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), registrationListWriter(new RegistrationListWriter), handler(new RegistrationListReader)

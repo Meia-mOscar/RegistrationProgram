@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-c5b465da8e7e869e3c0e.json",
+					"jsonFile" : "directory-.-Debug-f54e9a75f4ddadda5620.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RegistrationProgram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RegistrationProgram-Debug-1c49956aaa04982cc1ce.json",
+					"jsonFile" : "target-RegistrationProgram-Debug-a1bb85bb9c57449fb3ea.json",
 					"name" : "RegistrationProgram",
 					"projectIndex" : 0
 				},

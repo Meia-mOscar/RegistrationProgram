@@ -104,6 +104,55 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
     return;
 }
 
+void RegistrationListReader::addRegistration(RegistrationList *regList, ConcreteRegistrationFactory *regFactory){
+    int yyyy;
+    int mm;
+    int dd;
+    //Uniqueness check, email
+    int regListSize = regList->totalRegistrations();
+    for(int i=0; i<rCount; i++){
+        bool isRegistered = false;
+        for(int n=0; n<regListSize; n++){
+            if(rEmail.at(i) == regList->at(n)->getAttendee().getEmail()){
+                isRegistered = true;
+            }
+        }
+
+        /* Refactor
+         * Pass rType.at(i) & trust the correct object will be created.
+         *
+         *
+         *
+         */
+
+        if(!isRegistered){
+            newRegistrationCount++;
+            yyyy = rDate.at(i).year();
+            mm = rDate.at(i).month();
+            dd = rDate.at(i).day();
+            Person newPerson(rName.at(i), rAffiliation.at(i), rEmail.at(i));
+            if(rType.at(i) == "registration"){
+                Registration *newRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
+                //int yyyy, int mm, int dd
+                newRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newRegistration);
+            }else if(rType.at(i) == "studentregistration"){
+                /*StudentRegistration *newStudentRegistration = dynamic_cast<StudentRegistration*>(newRegistration);
+                newStudentRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newStudentRegistration);*/
+                regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson,""));
+            }else if(rType.at(i) == "guestregistration"){
+                /*GuestRegistration *newGuestRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
+                newGuestRegistration->setBookingDate(yyyy, mm, dd);
+                regList->addRegistration(newGuestRegistration);*/
+                regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson, ""));
+            }
+        }
+    }
+
+    return;
+}
+
 int RegistrationListReader::returnRegistrationCount(){
     return newRegistrationCount;
 }

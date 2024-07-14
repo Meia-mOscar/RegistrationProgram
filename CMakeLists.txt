@@ -41,6 +41,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         RegistrationListWriter.cpp
         RegistrationListReader.h
         RegistrationListReader.cpp
+        ConcreteRegistrationFactory.h
+        ConcreteRegistrationFactory.cpp
+        RegistrationFactory.h
+        RegistrationFactory.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET RegistrationProgram APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
