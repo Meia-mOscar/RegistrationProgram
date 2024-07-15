@@ -3,6 +3,7 @@
 #include "StudentRegistration.h"
 
 Registration* ConcreteRegistrationFactory::createRegistration(const QString &type, const Person &person, const QString &details) const {
+    qDebug() << "Request 'ConcreteRegistrationFactory::createRegistration' create : " << details;
     if(type=="registration"){
         return new Registration(person);
     } else if(type=="studentregistration"){

@@ -2,6 +2,7 @@
 #include "GuestRegistration.h"
 #include "StudentRegistration.h"
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), registrationListWriter(new RegistrationListWriter), handler(new RegistrationListReader)
 {
@@ -197,6 +198,7 @@ void MainWindow::uploadClicked(){
         reader.parse(source);
     }
     //handler->addRegistration(&registrationList);
+    qDebug() << "RegistrationListReader::addRegistration(&regList, regFactory)";
     handler->addRegistration(&registrationList, registrationFactory);
     //Program simply closes, no Abort message
     MainWindow::refreshTable();
