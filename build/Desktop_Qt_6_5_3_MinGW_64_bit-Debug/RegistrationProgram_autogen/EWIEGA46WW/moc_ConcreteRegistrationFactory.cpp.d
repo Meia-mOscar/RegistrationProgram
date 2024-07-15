@@ -306,6 +306,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationPr
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Person.h \
-  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.h \
-  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.h

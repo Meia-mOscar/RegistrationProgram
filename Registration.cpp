@@ -34,6 +34,6 @@ QString Registration::getType(){
     return QString("registration");
 }
 
-void Registration::setBookingDate(int yyyy, int mm, int dd){
+void Registration::setBookingDate(int yyyy, int mm, int dd) {
     m_BookingDate.setDate(yyyy, mm, dd);
 }

@@ -1,7 +1,7 @@
 #include "RegistrationListReader.h"
-#include "StudentRegistration.h"
-#include "GuestRegistration.h"
-
+/*#include "StudentRegistration.h"
+#include "GuestRegistration.h"*/
+#include "AbstractRegistrationFactory.h"
 #include <iostream>
 #include <stdexcept>
 
@@ -68,7 +68,7 @@ void RegistrationListReader::readFromFile(RegistrationList *regList, QString fNa
 
 }
 
-void RegistrationListReader::addRegistration(RegistrationList *regList){
+/*void RegistrationListReader::addRegistration(RegistrationList *regList){
     int yyyy;
     int mm;
     int dd;
@@ -105,9 +105,9 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
     }
 
     return;
-}
+}*/
 
-void RegistrationListReader::addRegistration(RegistrationList *regList, ConcreteRegistrationFactory *regFactory){
+void RegistrationListReader::addRegistration(RegistrationList *regList){
     qDebug() << "Enter : RegistrationListReader::addRegistration(regList, regfactory)";
     int yyyy;
     int mm;
@@ -139,7 +139,10 @@ void RegistrationListReader::addRegistration(RegistrationList *regList, Concrete
             qDebug() << "Registration type: " << rType.at(i);
             if(rType.at(i) == "registration"){
                 qDebug() << "Create Registration obj.";
-                Registration *newRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
+                //Registration *newRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
+                QString str = "";
+                AbstractRegistrationFactory *registrationFactory = new RegistrationFactory;
+                AbstractRegistration *newRegistration = registrationFactory->createRegistration(newPerson, str);
                 qDebug() << "Registration obj. created";
                 //int yyyy, int mm, int dd
                 newRegistration->setBookingDate(yyyy, mm, dd);
@@ -150,20 +153,18 @@ void RegistrationListReader::addRegistration(RegistrationList *regList, Concrete
                 newStudentRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newStudentRegistration);*/
                 try{
-                    regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson,""));
+                    //regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson,""));
                     qDebug() << "StudentRegistration obj. created";
                 }catch (const std::exception &e) {
                     std::cerr << "Exception caught: " << e.what() << std::endl;
                     qDebug() << e.what();
-                }catch (){
-                    qDebug() << "Unknown exception caught";
                 }
             }else if(rType.at(i) == "guestregistration"){
                 qDebug() << "Create GuestRegistration obj.";
                 /*GuestRegistration *newGuestRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
                 newGuestRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newGuestRegistration);*/
-                regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson, ""));
+                //regList->addRegistration(regFactory->createRegistration(rType.at(i), newPerson, ""));
                 qDebug() << "GuestRegistration obj. created";
             }
         }

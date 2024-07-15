@@ -5,9 +5,9 @@
 class StudentRegistration : public Registration{
 public:
     StudentRegistration(Person person, QString qualification);
-    double calculateFee();
-    QString toString();
-    QString getType();
+    double calculateFee() override;
+    QString toString() override;
+    QString getType() override;
 private:
     QString m_Qualification;
 };

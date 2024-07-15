@@ -41,10 +41,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         RegistrationListWriter.cpp
         RegistrationListReader.h
         RegistrationListReader.cpp
-        ConcreteRegistrationFactory.h
-        ConcreteRegistrationFactory.cpp
         RegistrationFactory.h
+        AbstractRegistrationFactory.h
+        AbstractRegistration.h
         RegistrationFactory.cpp
+        StudentRegistrationFactory.h
+        StudentRegistrationFactory.cpp
+        GuestRegistrationFactory.h
+        GuestRegistrationFactory.cpp
+
+
 
     )
 # Define target properties for Android with Qt 6 as:

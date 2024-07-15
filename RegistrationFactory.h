@@ -1,12 +1,12 @@
 #ifndef REGISTRATIONFACTORY_H
 #define REGISTRATIONFACTORY_H
 
-#include "Registration.h"
+#include "AbstractRegistrationFactory.h"
 
-class RegistrationFactory{
+class RegistrationFactory : public AbstractRegistrationFactory {
 public:
-    virtual ~RegistrationFactory(){};
-    virtual Registration* createRegistration(const QString &type, const Person &person, const QString &details) const = 0;
+    static RegistrationFactory* instance();
+    AbstractRegistration* createRegistration(Person &person, QString &details) const override;
 };
 
 #endif // REGISTRATIONFACTORY_H

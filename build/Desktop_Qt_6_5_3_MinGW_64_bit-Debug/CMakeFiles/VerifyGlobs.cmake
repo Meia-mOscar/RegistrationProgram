@@ -41,8 +41,9 @@ endif()
 # _directory_contents at C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/*.cpp")
 set(OLD_GLOB
-  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.cpp"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.cpp"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.cpp"
@@ -50,11 +51,13 @@ set(OLD_GLOB
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListReader.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/mocs_compilation.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_ConcreteRegistrationFactory.cpp"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_RegistrationFactory.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/mocs_compilation.cpp"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/main.cpp"
@@ -77,8 +80,10 @@ endif()
 # _directory_contents at C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/*.h")
 set(OLD_GLOB
-  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.h"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.h"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h"
@@ -87,6 +92,7 @@ set(OLD_GLOB
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationType.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h"
+  "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.h"

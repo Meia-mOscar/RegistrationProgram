@@ -4,7 +4,6 @@
 #include "RegistrationList.h"
 #include "RegistrationListWriter.h"
 #include "RegistrationListReader.h"
-#include "ConcreteRegistrationFactory.h"
 
 #include <QMainWindow>
 #include <QLabel>
@@ -95,6 +94,5 @@ private:
     QFileDialog fileDialogUpload;
     RegistrationListReader *handler;
     //Question 4, RegistrationFactory: MainWIndow::uploadClicked() adds by method, handler->addRegistration(&registrationList);
-    ConcreteRegistrationFactory *registrationFactory = ConcreteRegistrationFactory::instance();
 };
 #endif // MAINWINDOW_H

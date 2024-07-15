@@ -2,7 +2,7 @@
 #define REGISTRATIONLISTREADER_H
 
 #include "RegistrationList.h"
-#include "ConcreteRegistrationFactory.h"
+#include "RegistrationFactory.h"
 #include <QMessageBox>
 #include <QXmlInputSource>
 #include <QXmlSimpleReader>
@@ -25,7 +25,7 @@ public:
     bool fatalError(const QXmlParseException &exception);
     void readFromFile(RegistrationList *regList, QString fName);
     void addRegistration(RegistrationList *regList);
-    void addRegistration(RegistrationList *regList, ConcreteRegistrationFactory *regFactory);
+    void addRegistration(RegistrationList *regList, RegistrationFactory *regFactory);
     int returnRegistrationCount();
 private:
     QString currentTxt;

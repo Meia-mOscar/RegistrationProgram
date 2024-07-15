@@ -660,11 +660,13 @@ RegistrationProgram_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/CMakeLists.txt \
-	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.cpp \
-	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.cpp \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistration.h \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.cpp \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Person.cpp \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Person.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.cpp \
@@ -679,6 +681,8 @@ RegistrationProgram_autogen/timestamp: \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.h \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.cpp \
+	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.h \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \

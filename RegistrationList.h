@@ -6,6 +6,8 @@ class RegistrationList {
 public:
     RegistrationList();
     bool addRegistration(Registration *registration);
+    bool addRegistration(AbstractRegistration *abstractRegistration);
+    //Implement: Either funtion overload, or consider changing the QList<type> type == AbstractRegistration
     ~RegistrationList();
     bool isRegistered(QString name);
     double totalFee(QString type);

@@ -445,7 +445,8 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h
- mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h
@@ -465,6 +466,7 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListReader.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListWriter.cpp
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistration.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.h
  mmc:Q_OBJECT
@@ -774,13 +776,19 @@ C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationPro
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h
+ mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/ConcreteRegistrationFactory.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Person.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/Registration.h
- mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h
  mdp:C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/main.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/mainwindow.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.cpp
 C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/RegistrationType.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.h
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/GuestRegistrationFactory.cpp
+C:/Users/oscar/Documents/COS3711 AdvancedProgramming/Assignments/RegistrationProgram/StudentRegistrationFactory.cpp
