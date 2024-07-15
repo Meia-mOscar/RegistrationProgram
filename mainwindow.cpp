@@ -196,7 +196,9 @@ void MainWindow::uploadClicked(){
         reader.setContentHandler(handler);
         reader.parse(source);
     }
-    handler->addRegistration(&registrationList);
+    //handler->addRegistration(&registrationList);
+    handler->addRegistration(&registrationList, registrationFactory);
+    //Program simply closes, no Abort message
     MainWindow::refreshTable();
 }
 

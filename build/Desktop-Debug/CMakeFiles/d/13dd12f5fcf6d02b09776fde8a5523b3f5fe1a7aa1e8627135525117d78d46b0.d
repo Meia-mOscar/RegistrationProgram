@@ -668,12 +668,16 @@ RegistrationProgram_autogen/timestamp: \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/CMakeLists.txt \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListReader.cpp \

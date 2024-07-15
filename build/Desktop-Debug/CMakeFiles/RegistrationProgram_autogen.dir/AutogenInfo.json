@@ -359,6 +359,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_ConcreteRegistrationFactory.cpp",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h",
 			"MU",
 			"EWIEGA46WW/moc_GuestRegistration.cpp",
@@ -374,6 +380,12 @@
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h",
 			"MU",
 			"EWIEGA46WW/moc_Registration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_RegistrationFactory.cpp",
 			null
 		],
 		[
@@ -482,6 +494,11 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp",
 			"MU",
 			null
@@ -493,6 +510,11 @@
 		],
 		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp",
 			"MU",
 			null
 		],

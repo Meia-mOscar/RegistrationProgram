@@ -1938,6 +1938,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_big_codecs",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: big_codecs (from target Qt6::Core5Compat)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_buttongroup",
 			"properties" : 
 			[
@@ -2056,6 +2068,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_codecs",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: codecs (from target Qt6::Core5Compat)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_colordialog",
@@ -2592,6 +2616,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: dockwidget (from target Qt6::Widgets)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_dom",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: dom (from target Qt6::Xml)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3268,6 +3304,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_iconv",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: iconv (from target Qt6::Core5Compat)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_icu",
@@ -5274,6 +5322,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_textcodec",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: textcodec (from target Qt6::Core5Compat)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_textdate",
 			"properties" : 
 			[
@@ -5970,6 +6030,18 @@
 			"value" : "C:/Qt/6.5.3/mingw_64/bin/qmake.exe"
 		},
 		{
+			"name" : "Qt6Core5Compat_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Core5Compat."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat"
+		},
+		{
 			"name" : "Qt6CoreTools_DIR",
 			"properties" : 
 			[
@@ -6064,6 +6136,18 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Widgets"
+		},
+		{
+			"name" : "Qt6Xml_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Xml."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml"
 		},
 		{
 			"name" : "Qt6ZlibPrivate_DIR",
