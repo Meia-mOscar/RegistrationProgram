@@ -1,6 +1,6 @@
 #include "StudentRegistration.h"
 
-StudentRegistration::StudentRegistration(Person person,QString qualification)
+StudentRegistration::StudentRegistration(Person person, QString qualification)
     : Registration(person), m_Qualification(qualification){
 
 };
