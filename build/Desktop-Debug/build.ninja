@@ -129,17 +129,25 @@ build CMakeFiles/RegistrationProgram.dir/RegistrationListReader.cpp.obj: CXX_COM
   OBJECT_DIR = CMakeFiles\RegistrationProgram.dir
   OBJECT_FILE_DIR = CMakeFiles\RegistrationProgram.dir
 
-build CMakeFiles/RegistrationProgram.dir/ConcreteRegistrationFactory.cpp.obj: CXX_COMPILER__RegistrationProgram_unscanned_Debug C$:/Users/TTB$ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp || cmake_object_order_depends_target_RegistrationProgram
+build CMakeFiles/RegistrationProgram.dir/RegistrationFactory.cpp.obj: CXX_COMPILER__RegistrationProgram_unscanned_Debug C$:/Users/TTB$ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp || cmake_object_order_depends_target_RegistrationProgram
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DQT_XML_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\RegistrationProgram.dir\ConcreteRegistrationFactory.cpp.obj.d
+  DEP_FILE = CMakeFiles\RegistrationProgram.dir\RegistrationFactory.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/include" -isystem C:/Qt/6.5.3/mingw_64/include/QtCore -isystem C:/Qt/6.5.3/mingw_64/include -isystem C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.5.3/mingw_64/include/QtGui -isystem C:/Qt/6.5.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.5.3/mingw_64/include/QtXml -isystem C:/Qt/6.5.3/mingw_64/include/QtCore5Compat
   OBJECT_DIR = CMakeFiles\RegistrationProgram.dir
   OBJECT_FILE_DIR = CMakeFiles\RegistrationProgram.dir
 
-build CMakeFiles/RegistrationProgram.dir/RegistrationFactory.cpp.obj: CXX_COMPILER__RegistrationProgram_unscanned_Debug C$:/Users/TTB$ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp || cmake_object_order_depends_target_RegistrationProgram
+build CMakeFiles/RegistrationProgram.dir/StudentRegistrationFactory.cpp.obj: CXX_COMPILER__RegistrationProgram_unscanned_Debug C$:/Users/TTB$ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp || cmake_object_order_depends_target_RegistrationProgram
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DQT_XML_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\RegistrationProgram.dir\RegistrationFactory.cpp.obj.d
+  DEP_FILE = CMakeFiles\RegistrationProgram.dir\StudentRegistrationFactory.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/include" -isystem C:/Qt/6.5.3/mingw_64/include/QtCore -isystem C:/Qt/6.5.3/mingw_64/include -isystem C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.5.3/mingw_64/include/QtGui -isystem C:/Qt/6.5.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.5.3/mingw_64/include/QtXml -isystem C:/Qt/6.5.3/mingw_64/include/QtCore5Compat
+  OBJECT_DIR = CMakeFiles\RegistrationProgram.dir
+  OBJECT_FILE_DIR = CMakeFiles\RegistrationProgram.dir
+
+build CMakeFiles/RegistrationProgram.dir/GuestRegistrationFactory.cpp.obj: CXX_COMPILER__RegistrationProgram_unscanned_Debug C$:/Users/TTB$ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp || cmake_object_order_depends_target_RegistrationProgram
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DQT_XML_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\RegistrationProgram.dir\GuestRegistrationFactory.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/include" -isystem C:/Qt/6.5.3/mingw_64/include/QtCore -isystem C:/Qt/6.5.3/mingw_64/include -isystem C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.5.3/mingw_64/include/QtGui -isystem C:/Qt/6.5.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.5.3/mingw_64/include/QtXml -isystem C:/Qt/6.5.3/mingw_64/include/QtCore5Compat
   OBJECT_DIR = CMakeFiles\RegistrationProgram.dir
@@ -153,7 +161,7 @@ build CMakeFiles/RegistrationProgram.dir/RegistrationFactory.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable RegistrationProgram.exe
 
-build RegistrationProgram.exe: CXX_EXECUTABLE_LINKER__RegistrationProgram_Debug CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj CMakeFiles/RegistrationProgram.dir/main.cpp.obj CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj CMakeFiles/RegistrationProgram.dir/Person.cpp.obj CMakeFiles/RegistrationProgram.dir/StudentRegistration.cpp.obj CMakeFiles/RegistrationProgram.dir/GuestRegistration.cpp.obj CMakeFiles/RegistrationProgram.dir/Registration.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationListWriter.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationListReader.cpp.obj CMakeFiles/RegistrationProgram.dir/ConcreteRegistrationFactory.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationFactory.cpp.obj | C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Xml.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core5Compat.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.5.3/mingw_64/lib/libQt6EntryPoint.a || RegistrationProgram_autogen RegistrationProgram_autogen_timestamp_deps
+build RegistrationProgram.exe: CXX_EXECUTABLE_LINKER__RegistrationProgram_Debug CMakeFiles/RegistrationProgram.dir/RegistrationProgram_autogen/mocs_compilation.cpp.obj CMakeFiles/RegistrationProgram.dir/main.cpp.obj CMakeFiles/RegistrationProgram.dir/mainwindow.cpp.obj CMakeFiles/RegistrationProgram.dir/Person.cpp.obj CMakeFiles/RegistrationProgram.dir/StudentRegistration.cpp.obj CMakeFiles/RegistrationProgram.dir/GuestRegistration.cpp.obj CMakeFiles/RegistrationProgram.dir/Registration.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationList.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationListWriter.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationListReader.cpp.obj CMakeFiles/RegistrationProgram.dir/RegistrationFactory.cpp.obj CMakeFiles/RegistrationProgram.dir/StudentRegistrationFactory.cpp.obj CMakeFiles/RegistrationProgram.dir/GuestRegistrationFactory.cpp.obj | C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Xml.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core5Compat.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.5.3/mingw_64/lib/libQt6EntryPoint.a || RegistrationProgram_autogen RegistrationProgram_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.5.3/mingw_64/lib/libQt6Xml.a  C:/Qt/6.5.3/mingw_64/lib/libQt6Core5Compat.a  C:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  C:/Qt/6.5.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.5.3/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -256,7 +264,7 @@ build RegistrationProgram_autogen/timestamp RegistrationProgram_autogen/mocs_com
 #############################################
 # Phony custom command for CMakeFiles\RegistrationProgram_autogen_timestamp_deps
 
-build CMakeFiles/RegistrationProgram_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RegistrationProgram_autogen_timestamp_deps: phony C$:/Qt/6.5.3/mingw_64/./bin/uic.exe C$:/Qt/6.5.3/mingw_64/./bin/moc.exe C$:/Qt/6.5.3/mingw_64/lib/libQt6Xml.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core5Compat.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a
+build CMakeFiles/RegistrationProgram_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RegistrationProgram_autogen_timestamp_deps: phony C$:/Qt/6.5.3/mingw_64/./bin/moc.exe C$:/Qt/6.5.3/mingw_64/./bin/uic.exe C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core5Compat.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Xml.a
 
 
 #############################################

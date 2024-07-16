@@ -447,7 +447,8 @@ C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desk
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h \

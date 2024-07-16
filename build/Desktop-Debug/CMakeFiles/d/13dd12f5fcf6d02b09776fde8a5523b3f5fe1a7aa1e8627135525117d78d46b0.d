@@ -667,11 +667,13 @@ RegistrationProgram_autogen/timestamp: \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/CMakeLists.txt \
-  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp \
-  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.cpp \
@@ -686,6 +688,8 @@ RegistrationProgram_autogen/timestamp: \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.h \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.cpp \
   C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp \
+  C:/Users/TTB\ Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

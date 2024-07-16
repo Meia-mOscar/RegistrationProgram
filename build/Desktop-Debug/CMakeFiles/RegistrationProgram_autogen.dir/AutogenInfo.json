@@ -359,15 +359,27 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h",
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h",
 			"MU",
-			"EWIEGA46WW/moc_ConcreteRegistrationFactory.cpp",
+			"EWIEGA46WW/moc_AbstractRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_AbstractRegistrationFactory.cpp",
 			null
 		],
 		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h",
 			"MU",
 			"EWIEGA46WW/moc_GuestRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_GuestRegistrationFactory.cpp",
 			null
 		],
 		[
@@ -410,6 +422,12 @@
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h",
 			"MU",
 			"EWIEGA46WW/moc_StudentRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_StudentRegistrationFactory.cpp",
 			null
 		],
 		[
@@ -494,12 +512,12 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp",
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp",
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp",
 			"MU",
 			null
 		],
@@ -535,6 +553,11 @@
 		],
 		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp",
 			"MU",
 			null
 		],

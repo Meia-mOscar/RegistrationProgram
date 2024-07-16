@@ -41,8 +41,9 @@ endif()
 # _directory_contents at C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/*.cpp")
 set(OLD_GLOB
-  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.cpp"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp"
@@ -50,6 +51,7 @@ set(OLD_GLOB
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListReader.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.cpp"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_ConcreteRegistrationFactory.cpp"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/EWIEGA46WW/moc_mainwindow.cpp"
@@ -77,8 +79,10 @@ endif()
 # _directory_contents at C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/*.h")
 set(OLD_GLOB
-  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h"
@@ -87,6 +91,7 @@ set(OLD_GLOB
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationType.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h"
+  "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/RegistrationProgram_autogen/moc_predefs.h"
   "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/mainwindow.h"

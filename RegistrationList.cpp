@@ -1,16 +1,16 @@
 #include "RegistrationList.h"
 
-bool RegistrationList::addRegistration(Registration *registration){
+bool RegistrationList::addRegistration(AbstractRegistration *abstractRegistration){
     bool newAttendee = true;
     //Email validation
     for(int i=0; i<m_AttendeeList.size(); i++){
-        if(m_AttendeeList.at(i)->getAttendee().getEmail() == registration->getAttendee().getEmail()){
+        if(m_AttendeeList.at(i)->getAttendee().getEmail() == abstractRegistration->getAttendee().getEmail()){
             newAttendee = false;
         }
     }
 
     if(newAttendee){
-        m_AttendeeList.append(registration);
+        m_AttendeeList.append(abstractRegistration);
     }
 
     return newAttendee;
@@ -64,6 +64,6 @@ int RegistrationList::totalRegistrations(){
     return m_AttendeeList.size();
 }
 
-Registration* RegistrationList::at(int i){
+AbstractRegistration* RegistrationList::at(int i){
     return m_AttendeeList.at(i);
 }

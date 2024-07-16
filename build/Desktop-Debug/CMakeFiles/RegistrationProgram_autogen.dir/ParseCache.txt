@@ -451,7 +451,8 @@ C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/mainwindow.
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
- mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.h
+ mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h
+ mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h
  mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.h
  mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Registration.h
  mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h
@@ -795,3 +796,9 @@ C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteReg
  mdp:C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/build/Desktop-Debug/RegistrationProgram_autogen/moc_predefs.h
 C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/ConcreteRegistrationFactory.cpp
 C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.h
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.h
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp
+C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp
