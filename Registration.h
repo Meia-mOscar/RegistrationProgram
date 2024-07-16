@@ -1,16 +1,18 @@
 #ifndef REGISTRATION_H
 #define REGISTRATION_H
+#include "AbstractRegistration.h"
 #include <QDate>
-#include "Person.h"
 
-class Registration{
+class Registration : public AbstractRegistration {
 public:
+    ~Registration() override = default;
     Registration(Person person);
-    Person getAttendee();
-    QDate getBookingDate();
-    virtual double calculateFee();
-    virtual QString toString();
-    virtual QString getType();
+    Person getAttendee() override;
+    QDate getBookingDate() override;
+    void setBookingDate(int yyyy, int mm, int dd) override;
+    double calculateFee() override;
+    QString toString() override;
+    QString getType() override;
 private:
     double STANDARD_FEE;
     Person m_Attendee;

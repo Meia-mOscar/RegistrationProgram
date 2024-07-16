@@ -175,6 +175,7 @@
 #define __PTRDIFF_MAX__ 0x7fffffffffffffffLL
 #define __amd64 1
 #define __tune_core2__ 1
+#define QT_XML_LIB 1
 #define __ATOMIC_HLE_ACQUIRE 65536
 #define __GNUG__ 13
 #define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
@@ -212,6 +213,7 @@
 #define __UINT16_MAX__ 0xffff
 #define __cdecl __attribute__((__cdecl__))
 #define __FLT128_HAS_INFINITY__ 1
+#define QT_CORE5COMPAT_LIB 1
 #define __FLT32_MIN__ 1.17549435082228750796873653722224568e-38F32
 #define __UINT8_TYPE__ unsigned char
 #define __FLT_DIG__ 6

@@ -1,16 +1,16 @@
 #include "RegistrationList.h"
 
-bool RegistrationList::addRegistration(Registration *registration){
+bool RegistrationList::addRegistration(AbstractRegistration *abstractRegistration){
     bool newAttendee = true;
     //Email validation
     for(int i=0; i<m_AttendeeList.size(); i++){
-        if(m_AttendeeList.at(i)->getAttendee().getEmail() == registration->getAttendee().getEmail()){
+        if(m_AttendeeList.at(i)->getAttendee().getEmail() == abstractRegistration->getAttendee().getEmail()){
             newAttendee = false;
         }
     }
 
     if(newAttendee){
-        m_AttendeeList.append(registration);
+        m_AttendeeList.append(abstractRegistration);
     }
 
     return newAttendee;
@@ -51,19 +51,19 @@ double RegistrationList::totalFee(QString type){
 
 int RegistrationList::totalRegistrations(QString affiliation){
     int count = 0;
-    if(affiliation != "allRegistrations"){
-        for(int i=0; i<m_AttendeeList.size(); i++){
+    for(int i=0; i<m_AttendeeList.size(); i++){
             if(m_AttendeeList.at(i)->getAttendee().getAffiliation() == affiliation){
                 count++;
             }
         }
-    }else{
-        count = m_AttendeeList.size();
-    }
 
     return count;
 }
 
-Registration* RegistrationList::at(int i){
+int RegistrationList::totalRegistrations(){
+    return m_AttendeeList.size();
+}
+
+AbstractRegistration* RegistrationList::at(int i){
     return m_AttendeeList.at(i);
 }

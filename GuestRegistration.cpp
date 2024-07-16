@@ -3,11 +3,11 @@
 GuestRegistration::GuestRegistration(Person person, QString category)
     : Registration(person), m_Category(category){
 
-};
+}
 
 double GuestRegistration::calculateFee(){
     return this->Registration::calculateFee()*0.9;
-};
+}
 
 QString GuestRegistration::toString(){
     return QString("Name: %1\n"
@@ -22,8 +22,8 @@ QString GuestRegistration::toString(){
              QString::number(this->calculateFee()),
              QString(this->getBookingDate().toString()),
              m_Category);
-};
+}
 
 QString GuestRegistration::getType(){
-    return QString("Guest Registration");
+    return QString("guestregistration");
 }

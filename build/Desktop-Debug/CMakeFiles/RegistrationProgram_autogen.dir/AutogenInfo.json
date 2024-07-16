@@ -289,6 +289,68 @@
 		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtFeature.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlConfigVersion.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlConfigVersionImpl.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlDependencies.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlTargets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlAdditionalTargetInfo.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Xml/Qt6XmlVersionlessTargets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtFeature.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake",
+		"C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessTargets.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram",
@@ -297,9 +359,27 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistration.h",
+			"MU",
+			"EWIEGA46WW/moc_AbstractRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/AbstractRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_AbstractRegistrationFactory.cpp",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistration.h",
 			"MU",
 			"EWIEGA46WW/moc_GuestRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_GuestRegistrationFactory.cpp",
 			null
 		],
 		[
@@ -315,15 +395,39 @@
 			null
 		],
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_RegistrationFactory.cpp",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.h",
 			"MU",
 			"EWIEGA46WW/moc_RegistrationList.cpp",
 			null
 		],
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListReader.h",
+			"MU",
+			"EWIEGA46WW/moc_RegistrationListReader.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.h",
+			"MU",
+			"EWIEGA46WW/moc_RegistrationListWriter.cpp",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.h",
 			"MU",
 			"EWIEGA46WW/moc_StudentRegistration.cpp",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.h",
+			"MU",
+			"EWIEGA46WW/moc_StudentRegistrationFactory.cpp",
 			null
 		],
 		[
@@ -339,10 +443,12 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE5COMPAT_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NEEDS_QMAIN",
 		"QT_WIDGETS_LIB",
+		"QT_XML_LIB",
 		"UNICODE",
 		"WIN32",
 		"WIN64",
@@ -362,8 +468,10 @@
 		"C:/Qt/6.5.3/mingw_64/include/QtCore",
 		"C:/Qt/6.5.3/mingw_64/include",
 		"C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++",
-		"C:/Qt/6.5.3/mingw_64/include/QtWidgets",
 		"C:/Qt/6.5.3/mingw_64/include/QtGui",
+		"C:/Qt/6.5.3/mingw_64/include/QtWidgets",
+		"C:/Qt/6.5.3/mingw_64/include/QtXml",
+		"C:/Qt/6.5.3/mingw_64/include/QtCore5Compat",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
@@ -409,6 +517,11 @@
 			null
 		],
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/GuestRegistrationFactory.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/Person.cpp",
 			"MU",
 			null
@@ -419,12 +532,32 @@
 			null
 		],
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationFactory.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationList.cpp",
 			"MU",
 			null
 		],
 		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListReader.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/RegistrationListWriter.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistration.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/TTB Admin/Documents/Oscar/UNISA/COS3711/RegistrationProgram/StudentRegistrationFactory.cpp",
 			"MU",
 			null
 		],

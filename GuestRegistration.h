@@ -5,9 +5,9 @@
 class GuestRegistration : public Registration {
 public:
     GuestRegistration(Person person, QString category);
-    double calculateFee();
-    QString toString();
-    QString getType();
+    double calculateFee() override;
+    QString toString() override;
+    QString getType() override;
 private:
     QString m_Category;
 };

@@ -1,0 +1,47 @@
+<RegistrationList>
+ <registration type="studentregistration">
+  <attendee>
+   <name>Oskar</name>
+   <affiliation>unisa</affiliation>
+   <email>oskar@gmail.com</email>
+  </attendee>
+  <bookingdate>14/07/2024</bookingdate>
+  <registrationfee>5</registrationfee>
+ </registration>
+ <registration type="registration">
+  <attendee>
+   <name>Emma</name>
+   <affiliation>maties</affiliation>
+   <email>emma@gmail.com</email>
+  </attendee>
+  <bookingdate>14/07/2024</bookingdate>
+  <registrationfee>10</registrationfee>
+ </registration>
+ <registration type="guestregistration">
+  <attendee>
+   <name>Jet</name>
+   <affiliation>imm</affiliation>
+   <email>jet@gmail.com</email>
+  </attendee>
+  <bookingdate>14/07/2024</bookingdate>
+  <registrationfee>9</registrationfee>
+ </registration>
+ <registration type="studentregistration">
+  <attendee>
+   <name>Win Lim</name>
+   <affiliation>cti</affiliation>
+   <email>winlim@gmail.com</email>
+  </attendee>
+  <bookingdate>14/07/2024</bookingdate>
+  <registrationfee>5</registrationfee>
+ </registration>
+ <registration type="studentregistration">
+  <attendee>
+   <name>Jes</name>
+   <affiliation>maties</affiliation>
+   <email>jes@themess.com</email>
+  </attendee>
+  <bookingdate>15/07/2024</bookingdate>
+  <registrationfee>5</registrationfee>
+ </registration>
+</RegistrationList>
