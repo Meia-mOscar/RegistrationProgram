@@ -1,5 +1,6 @@
 #ifndef ABSTRACTREGISTRATIONFACTORY_H
 #define ABSTRACTREGISTRATIONFACTORY_H
+
 #include "Person.h"
 #include "AbstractRegistration.h"
 

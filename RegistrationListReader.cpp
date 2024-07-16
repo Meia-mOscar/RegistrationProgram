@@ -1,6 +1,4 @@
 #include "RegistrationListReader.h"
-/*#include "StudentRegistration.h"
-#include "GuestRegistration.h"*/
 #include "AbstractRegistrationFactory.h"
 #include "StudentRegistrationFactory.h"
 #include "GuestRegistrationFactory.h"
@@ -108,7 +106,6 @@ void RegistrationListReader::readFromFile(RegistrationList *regList, QString fNa
 }*/
 
 void RegistrationListReader::addRegistration(RegistrationList *regList){
-    qDebug() << "Enter : RegistrationListReader::addRegistration(regList, regfactory)";
     int yyyy;
     int mm;
     int dd;
@@ -128,7 +125,6 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
          */
 
         if(!isRegistered){
-            qDebug() << "Uniqueness verified: Add registration.";
             newRegistrationCount++;
             yyyy = rDate.at(i).year();
             mm = rDate.at(i).month();
@@ -136,29 +132,22 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
             Person newPerson(rName.at(i), rAffiliation.at(i), rEmail.at(i));
             QString str;
             str.clear();
-            qDebug() << "Registration type: " << rType.at(i);
             if(rType.at(i) == "registration"){
-                qDebug() << "Create Registration obj.";
                 str = "";
                 AbstractRegistrationFactory *registrationFactory = RegistrationFactory::getInstance(); //Singleton pattern, implemented
                 AbstractRegistration *newRegistration = registrationFactory->createRegistration(newPerson, str);
-                qDebug() << "Registration obj. created";
                 newRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newRegistration);
             }else if(rType.at(i) == "studentregistration"){
-                qDebug() << "Create StudentRegistration obj.";
                 str = ""; //str should be feading the factory with m_Qualification
                 AbstractRegistrationFactory *studentRegistrationFactory = new StudentRegistrationFactory;
                 AbstractRegistration *newStudentRegistration = studentRegistrationFactory->createRegistration(newPerson, str);
                 regList->addRegistration(newStudentRegistration);
-                qDebug() << "StudentRegistration obj. created";
             }else if(rType.at(i) == "guestregistration"){
-                qDebug() << "Create GuestRegistration obj.";
                 str = ""; //str should be feading the factory with m_Qualification
                 AbstractRegistrationFactory *guestRegistrationFactory = new GuestRegistrationFactory;
                 AbstractRegistration *newguestRegistration = guestRegistrationFactory->createRegistration(newPerson, str);
                 regList->addRegistration(newguestRegistration);
-                qDebug() << "GuestRegistration obj. created";
             }
         }
     }

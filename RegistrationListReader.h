@@ -11,7 +11,6 @@
 #include <QList>
 #include <QDate>
 
-
 class RegistrationListReader : public QXmlDefaultHandler{
 public:
     RegistrationListReader();

@@ -6,8 +6,6 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), registrationListWriter(new RegistrationListWriter), handler(new RegistrationListReader)
 {
-    //Configure default values
-
     //Configure mainwindow
     headerFont.setBold(true);
     headerFont.setPointSize(12);
@@ -86,8 +84,6 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout.addWidget(&tableHeading);
     mainLayout.addWidget(&tableView);
     tableView.setModel(&table);
-    //Table column headings
-    //QFont::bold() at (rowCount == 0)
 
     //Question 2, Save as XML
     saveButton.setText("Save as XML");
@@ -113,7 +109,6 @@ MainWindow::~MainWindow() {
 void MainWindow::addClicked(){
     bool isRegistered = false;
     for(int i=0; i<registrationList.totalRegistrations(); i++){
-        //Unique user identification check, email
         if(registrationList.at(i)->getAttendee().getEmail() == emailLineEdit.text()){
             isRegistered = true;
             registrationStatus.setText("Existing attendee");
@@ -141,6 +136,7 @@ void MainWindow::addClicked(){
         }
         MainWindow::updateTable();
     }
+    MainWindow::clearInputWidgets();
 }
 
 void MainWindow::isRegisteredClicked(){
@@ -198,9 +194,6 @@ void MainWindow::uploadClicked(){
         reader.parse(source);
     }
     handler->addRegistration(&registrationList);
-    //qDebug() << "RegistrationListReader::addRegistration(&regList, regFactory)";
-    //handler->addRegistration(&registrationList, registrationFactory);
-    //Program simply closes, no Abort message
     MainWindow::refreshTable();
 }
 
@@ -263,7 +256,7 @@ void MainWindow::refreshTable(){
 void MainWindow::updateTable(){
     int index;
     index = (registrationList.totalRegistrations()-1);
-    //Add each attribute to the attendee table
+
     QStandardItem *nameAttribute = new QStandardItem;
     nameAttribute->setText(registrationList.at(index)->getAttendee().getName());
     table.setItem(index,0,nameAttribute);
@@ -284,34 +277,19 @@ void MainWindow::updateTable(){
     qualificationOrCategoryAttribute->setText(qualificationCategoryLineEdit.text());
     table.setItem(index,4,qualificationOrCategoryAttribute);
 
-    /*int start=0;
-    int end=0;
-    QString qVar = "qualification: ";
-    QString cVar = "category: ";
-    QString substr;
-    QStandardItem *qualificationOrCategoryAttribute = new QStandardItem;
-    if(registrationList.at(index)->toString().contains("category", Qt::CaseInsensitive)){
-        start = registrationList.at(index)->toString().indexOf(cVar,0,Qt::CaseInsensitive);
-        start += cVar.length()-1;
-        substr = registrationList.at(index)->toString().mid(start);
-        qualificationOrCategoryAttribute->setText(substr);
-
-    }else if(registrationList.at(index)->toString().contains("qualification", Qt::CaseInsensitive)){
-        start = registrationList.at(index)->toString().indexOf(qVar,0,Qt::CaseInsensitive);
-        start += qVar.length()-1;
-        substr = registrationList.at(index)->toString().mid(start);
-        qualificationOrCategoryAttribute->setText(substr);
-    }else{
-        qualificationOrCategoryAttribute->setText("");
-    }
-    table.setItem(index,4,qualificationOrCategoryAttribute);*/
-
     QStandardItem *bookingDate = new QStandardItem;
     bookingDate->setText(registrationList.at(index)->getBookingDate().toString("dd/M/yyyy"));
     table.setItem(index,5,bookingDate);
 
-    //registrationType
     QStandardItem *registrationFee = new QStandardItem;
     registrationFee->setText(QString::number(registrationList.at(index)->calculateFee()));
     table.setItem(index, 6, registrationFee);
+}
+
+void MainWindow::clearInputWidgets(){
+    nameLineEdit.clear();
+    emailLineEdit.clear();
+    affiliationLineEdit.clear();
+    registrationTypeDropDown.setCurrentIndex(0);
+    qualificationCategoryLineEdit.clear();
 }

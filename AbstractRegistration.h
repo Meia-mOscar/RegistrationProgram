@@ -1,5 +1,6 @@
 #ifndef ABSTRACTREGISTRATION_H
 #define ABSTRACTREGISTRATION_H
+
 #include <QString>
 #include <QDate>
 #include "Person.h"

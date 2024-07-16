@@ -4,7 +4,6 @@
 RegistrationFactory* RegistrationFactory::instance = NULL;
 
 AbstractRegistration* RegistrationFactory::createRegistration(Person &person, QString &details) const {
-    //qDebug() << "Request 'ConcreteRegistrationFactory::createRegistration' create : " << details;
     return new Registration(person);
 }
 

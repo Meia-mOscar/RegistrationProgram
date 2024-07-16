@@ -1,5 +1,6 @@
 #ifndef REGISTRATION_H
 #define REGISTRATION_H
+
 #include "AbstractRegistration.h"
 #include <QDate>
 

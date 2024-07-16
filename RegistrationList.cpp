@@ -2,7 +2,6 @@
 
 bool RegistrationList::addRegistration(AbstractRegistration *abstractRegistration){
     bool newAttendee = true;
-    //Email validation
     for(int i=0; i<m_AttendeeList.size(); i++){
         if(m_AttendeeList.at(i)->getAttendee().getEmail() == abstractRegistration->getAttendee().getEmail()){
             newAttendee = false;
@@ -37,7 +36,6 @@ bool RegistrationList::isRegistered(QString name){
     return isRegistered;
 }
 
-//Accepted types are "Registration", "StudentRegistration", "GuestRegistration"
 double RegistrationList::totalFee(QString type){
     double fee = 0;
     for(int i=0; i<m_AttendeeList.size(); i++){

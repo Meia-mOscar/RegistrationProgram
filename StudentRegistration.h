@@ -1,5 +1,6 @@
 #ifndef STUDENTREGISTRATION_H
 #define STUDENTREGISTRATION_H
+
 #include "Registration.h"
 
 class StudentRegistration : public Registration{

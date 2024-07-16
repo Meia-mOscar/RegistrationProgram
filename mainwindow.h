@@ -4,7 +4,6 @@
 #include "RegistrationList.h"
 #include "RegistrationListWriter.h"
 #include "RegistrationListReader.h"
-
 #include <QMainWindow>
 #include <QLabel>
 #include <QPushButton>
@@ -65,22 +64,22 @@ private:
     QLabel affiliationLabel;
     QLineEdit affiliationLineEdit;
     QLabel registrationTypeLabel;
-    QComboBox registrationTypeDropDown; //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QComboBox registrationTypeDropDown;
     QLabel qualificationCategoryLabel; //Registration type / Category?
-    QLineEdit qualificationCategoryLineEdit; //Registration or category
+    QLineEdit qualificationCategoryLineEdit; //Registration / category
     QPushButton addRegistration;
     QLabel registrationStatus;
     //Action groups
     QLabel isNameRegisteredLabel;
-    QLineEdit isNameRegisteredLineEdit; //Query by name, QString
+    QLineEdit isNameRegisteredLineEdit;
     QPushButton isRegisteredButton;
     QLabel isNameRegisteredResult;
     QLabel regestrationTypeQueryLabel;
-    QComboBox actionGroupRegistrationTypeDropDown;   //"Registration/NotApplicable" "StudentRegistration/Qualification" "GuestRegistration/Category"
+    QComboBox actionGroupRegistrationTypeDropDown;
     QPushButton calculateButton;
     QLabel calculateResult;
     QLabel countLabel;
-    QLineEdit affiliationCountLineEdit;; //Input the affiliation, QString
+    QLineEdit affiliationCountLineEdit;
     QPushButton countButton;
     QLabel countResult;
     //Table fields
@@ -93,6 +92,5 @@ private:
     QPushButton uploadButton;
     QFileDialog fileDialogUpload;
     RegistrationListReader *handler;
-    //Question 4, RegistrationFactory: MainWIndow::uploadClicked() adds by method, handler->addRegistration(&registrationList);
 };
 #endif // MAINWINDOW_H

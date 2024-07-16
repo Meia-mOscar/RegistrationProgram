@@ -444,7 +444,6 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationPr
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistration.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/AbstractRegistrationFactory.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Person.h \
-  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/Registration.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationFactory.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationList.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/RegistrationProgram/RegistrationListReader.h \
