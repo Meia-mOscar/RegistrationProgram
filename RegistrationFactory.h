@@ -5,8 +5,13 @@
 
 class RegistrationFactory : public AbstractRegistrationFactory {
 public:
-    static RegistrationFactory* instance();
     AbstractRegistration* createRegistration(Person &person, QString &details) const override;
+    RegistrationFactory(const RegistrationFactory&) = delete;
+    RegistrationFactory operator=(const RegistrationFactory&) = delete;
+    static RegistrationFactory* getInstance();
+private:
+    static RegistrationFactory* instance;
+    RegistrationFactory(){};
 };
 
 #endif // REGISTRATIONFACTORY_H

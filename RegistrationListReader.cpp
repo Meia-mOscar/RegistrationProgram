@@ -2,8 +2,8 @@
 /*#include "StudentRegistration.h"
 #include "GuestRegistration.h"*/
 #include "AbstractRegistrationFactory.h"
-#include <iostream>
-#include <stdexcept>
+#include "StudentRegistrationFactory.h"
+#include "GuestRegistrationFactory.h"
 
 RegistrationListReader::RegistrationListReader(){
     currentTxt.clear();
@@ -124,9 +124,7 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
 
         /* Refactor
          * Pass rType.at(i) & trust the correct object will be created.
-         *
-         *
-         *
+         * Below implementation mimics that of https://www.geeksforgeeks.org/factory-method-pattern-c-design-patterns/
          */
 
         if(!isRegistered){
@@ -141,25 +139,23 @@ void RegistrationListReader::addRegistration(RegistrationList *regList){
             qDebug() << "Registration type: " << rType.at(i);
             if(rType.at(i) == "registration"){
                 qDebug() << "Create Registration obj.";
-                //Registration *newRegistration = regFactory->createRegistration(rType.at(i), newPerson, "");
                 str = "";
-                AbstractRegistrationFactory *registrationFactory = new RegistrationFactory;
+                AbstractRegistrationFactory *registrationFactory = RegistrationFactory::getInstance(); //Singleton pattern, implemented
                 AbstractRegistration *newRegistration = registrationFactory->createRegistration(newPerson, str);
                 qDebug() << "Registration obj. created";
-                //int yyyy, int mm, int dd
                 newRegistration->setBookingDate(yyyy, mm, dd);
                 regList->addRegistration(newRegistration);
             }else if(rType.at(i) == "studentregistration"){
                 qDebug() << "Create StudentRegistration obj.";
                 str = ""; //str should be feading the factory with m_Qualification
-                AbstractRegistrationFactory *studentRegistrationFactory = new RegistrationFactory;
+                AbstractRegistrationFactory *studentRegistrationFactory = new StudentRegistrationFactory;
                 AbstractRegistration *newStudentRegistration = studentRegistrationFactory->createRegistration(newPerson, str);
                 regList->addRegistration(newStudentRegistration);
                 qDebug() << "StudentRegistration obj. created";
             }else if(rType.at(i) == "guestregistration"){
                 qDebug() << "Create GuestRegistration obj.";
                 str = ""; //str should be feading the factory with m_Qualification
-                AbstractRegistrationFactory *guestRegistrationFactory = new RegistrationFactory;
+                AbstractRegistrationFactory *guestRegistrationFactory = new GuestRegistrationFactory;
                 AbstractRegistration *newguestRegistration = guestRegistrationFactory->createRegistration(newPerson, str);
                 regList->addRegistration(newguestRegistration);
                 qDebug() << "GuestRegistration obj. created";
